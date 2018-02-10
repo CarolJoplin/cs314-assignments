@@ -1,31 +1,42 @@
+/*Carol Joplin
+  Simple Webpage
+*/
+
 .links{
-    width: 100%;
     height: 30%;
     position: relative;
     text-align: right;
+    font-family: "aileron-regular-webfont", Arial, sans-serif;
     margin: 10px 10px 10px 10px;
 }
 
+.linked {
+    position: relative;
+    margin: 10px;
+}
+
+.git {
+    position: relative;
+    margin: 10px;
+}
+
+.schrute {
+    position: relative;
+    margin: 10px;
+}
+
 .header {
-    width: 100%;
-    height: 30%;
     position: relative;
     text-align: center;
-    margin: 5px 5px 5px 5px;
-
 }
 
-/*html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-*/
 h1 {
-    font-family: "Aileron-Black", Aileron, sans-serif;
+    font-family: "aileron-bold-webfont", Arial, sans-serif;
+    margin: 25px;
 }
 
 .about {
-    width: 100%;
+   
     height: 30%;
     position: relative;
     text-align: center;
@@ -33,13 +44,12 @@ h1 {
     border: 0px 0px 25px 0px solid rgb(179, 217, 248);
     position: relative;
     padding: 25px 25px 25px 25px;
-    font-family: "Aileron-Thin", Aileron, Arial, sans-serif;
+    font-family: "Aileron-Regular", Arial, sans-serif;
     display: block;
-    /*margin: 25px 0px 0px 0px;*/
 }
 
 h2 {
-    font-family: "Aileron-Black", Aileron, sans-serif;
+    font-family: "aileron-bold-webfont", Arial, sans-serif;
 }
 
 .secondHeader {
@@ -47,37 +57,61 @@ h2 {
     padding: 0;
 }
 
-.imgs {
-    width: 100%;
-    height: 25%;
-    text-align: center;
-    border: 25px;
-    margin: 25px 25px 25px 0px;
-    display: inline-block;
 
+.image-container {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 15.6px 0px 12px 0px;
+    width: 50%;
 }
 
+.btn {
+    position: relative;
+    background-color: rgb(10, 81, 139);
+    border: solid 1px;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-family: "Aileron-Regular", Arial, sans-serif;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+	transform: translate(-50%, -50%); 
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+
 .box {
-    width: 100%;
+    position: relative;
     height: 200px; 
     background: rgb(10, 81, 139);
-    /*border: 25px solid rgb(10, 81, 139);*/
-    margin: 25px 0 0 0;
+    border: 25px solid rgb(10, 81, 139);
+    margin: 0;
+
 }
 
 .bar {
-    width: 100%;
-    height: 50px;
+    position: relative;
+    height: 10px;
     background: rgb(0, 0, 0);
-    /*border: 15px solid rgb(0, 0, 0);*/
-    /*margin: 0px 0px 80px 0px;*/
+    border: 15px solid rgb(0, 0, 0);  
 }
+
 
 .copyright {
-    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    vertical-align: middle;
     text-align: left;
-    border: 17px solid rgb(0, 0, 0);
-    position: absolute;
+    /*border: 10px solid rgb(0, 0, 0);*/
     color: white;
+    font-family: "Aileron-Regular", Arial, sans-serif;
 }
-
