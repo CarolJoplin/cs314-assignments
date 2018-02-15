@@ -36,7 +36,6 @@ h1 {
 }
 
 .about {
-   
     height: 30%;
     position: relative;
     text-align: center;
@@ -79,18 +78,11 @@ h2 {
     min-width: 0;
     margin: 5px;
 }
-/*
-   img {
-    width: 450px;
-    max-width: 100%; 
-    max-height: 450px; 
-}
-*/
-
 
 .btn {
     position: relative;
     background-color: rgb(10, 81, 139);
+    text-decoration: none;
     border: solid 1px;
     color: white;
     padding: 1em;
@@ -106,8 +98,57 @@ h2 {
     cursor: pointer;
     padding: 1em;
     border-radius: 10px;
+    animation: fade 2s infinite;
+    transition: opacity 1s ease;
+}
+.btn:hover {
+    /*opacity: 0.5;	/*(1 is full opacity, 0 is no opacity)*/
+    text-decoration: none;
+    color: white;
+    background-color: rgb(112, 189, 252); /*changes button color to red when clicked*/
+    transform: translate(-50%, -50%) scale(1.5) ease; /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: buttonGrow 5s; /* Safari 4+ */
+    -moz-animation: buttonGrow 5s; /* Fx 5+ */
+    -o-animation: buttonGrow 5s; /* Opera 12+ */
+    animation: buttonGrow 5s; /* IE 10+, Fx 29+ */
 }
 
+/*apply state to button when clicked*/
+.btn:active {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(112, 189, 252); /*changes button color to red when clicked*/
+}
+
+/*keyframe animations*/
+@-webkit-keyframes buttonGrow {
+    /*how you want it to transition*/
+    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
+    
+    50% {opacity: 1; transform: scale(1) ease;}
+}
+
+@-moz-keyframes buttonGrow {
+    /*how you want it to transition*/
+    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
+    
+    50% {opacity: 1; transform: scale(1) ease;}
+}
+
+@-o-keyframes buttonGrow {
+    /*how you want it to transition*/
+    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
+    
+    50% {opacity: 1; transform: scale(1) ease;}
+}
+
+@keyframes buttonGrow {
+    /*how you want it to transition*/
+    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
+    
+    50% {opacity: 1; transform: scale(1) ease;}
+}
 
 .box {
     position: relative;
