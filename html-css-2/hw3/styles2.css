@@ -23,7 +23,7 @@ html {
     text-decoration: none;
     color: white;
     /*background-color: rgb(112, 189, 252); /*changes button color to red when clicked*/
-    transform: translate(-50%, -50%) scale(1.5); /*translate keeps it in the same spot when it gets bigger*/
+    transform: translate(-50%, -50%) scale(1.5) 1s; /*translate keeps it in the same spot when it gets bigger*/
     animation: fade 2s;
     transition: opacity 1s ease;
 }
@@ -38,30 +38,26 @@ html {
 /*keyframe animations*/
 @-webkit-keyframes buttonGrow {
     /*how you want it to transition*/
-    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
-    
-    50% {opacity: 1; transform: scale(1) ease;}
+    0% { transform: scale(1) ease 1s;}
+    100% { transform: scale(1.5) ease 1s;}
 }
 
 @-moz-keyframes buttonGrow {
     /*how you want it to transition*/
-    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
-    
-    50% {opacity: 1; transform: scale(1) ease;}
+    0% { transform: scale(1) ease 1s;}
+    100% { transform: scale(1.5) ease 1s;}
 }
 
 @-o-keyframes buttonGrow {
     /*how you want it to transition*/
-    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
-    
-    50% {opacity: 1; transform: scale(1) ease;}
+    0% { transform: scale(1) ease 1s;}
+    100% { transform: scale(1.5) ease 1s;}
 }
 
 @keyframes buttonGrow {
     /*how you want it to transition*/
-    0%, 100% {opacity: 0; transform: scale(1.5) ease;}
-    
-    50% {opacity: 1; transform: scale(1) ease;}
+    0% { transform: scale(1) ease 1s;}
+    100% { transform: scale(1.5) ease 1s;}
 }
 
 /*apply state to button when clicked*/
