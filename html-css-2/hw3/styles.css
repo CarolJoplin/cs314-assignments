@@ -1,6 +1,12 @@
 /*Carol Joplin
   Simple Webpage
 */
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Aileron-Regular", Arial, sans-serif;
+}
+
 
 .links{
     height: 30%;
@@ -83,8 +89,8 @@ h2 {
     position: relative;
     background-color: rgb(10, 81, 139);
     text-decoration: none;
-    border: solid 1px;
     color: white;
+    border: solid 1px;
     padding: 1em;
     text-align: center;
     font-family: "Aileron-Regular", Arial, sans-serif;
@@ -99,14 +105,14 @@ h2 {
     padding: 1em;
     border-radius: 10px;
     animation: fade 2s infinite;
-    transition: opacity 1s ease;
+    transition: opacity 1s ease-out;
 }
 .btn:hover {
     /*opacity: 0.5;	/*(1 is full opacity, 0 is no opacity)*/
     text-decoration: none;
     color: white;
     background-color: rgb(112, 189, 252); /*changes button color to red when clicked*/
-    transform: translate(-50%, -50%) scale(1.5); /*translate keeps it in the same spot when it gets bigger*/
+    transform: translate(-50%, -50%) scale(1.5) ease-out; /*translate keeps it in the same spot when it gets bigger*/
 
     -webkit-animation: buttonGrow 5s; /* Safari 4+ */
     -moz-animation: buttonGrow 5s; /* Fx 5+ */
