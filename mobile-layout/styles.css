@@ -1,0 +1,186 @@
+/*Carol Joplin
+  Simple Webpage
+*/
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Aileron-Regular", Arial, sans-serif;
+}
+
+
+.links{
+    height: 30%;
+    position: relative;
+    text-align: right;
+    font-family: "aileron-regular-webfont", Arial, sans-serif;
+    margin: 10px 10px 10px 10px;
+}
+
+.linked {
+    position: relative;
+    margin: 10px;
+}
+
+.git {
+    position: relative;
+    margin: 10px;
+}
+
+.schrute {
+    position: relative;
+    margin: 10px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+}
+
+h1 {
+    font-family: "aileron-bold-webfont", Arial, sans-serif;
+    margin: 25px;
+}
+
+.about {
+    height: 30%;
+    position: relative;
+    text-align: center;
+    background: linear-gradient(to right, rgb(0, 68, 255), rgb(185, 222, 252));
+    background-color: rgb(185, 222, 252);
+    /*color: linear-gradient(to right, rgb(0, 26, 99), rgb(217, 171, 247));*/
+    border: 0px 0px 25px 0px solid rgb(144, 204, 253);
+    position: relative;
+    padding: 25px 25px 25px 25px;
+    font-family: "Aileron-Regular", Arial, sans-serif;
+    display: block;
+}
+
+h2 {
+    font-family: "aileron-bold-webfont", Arial, sans-serif;
+}
+
+.secondHeader {
+    margin: 0 15px 15px 15px;
+    padding: 0;
+}
+
+
+.image-container {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin: 15.6px 0px 12px 0px;
+    width: 50%;
+}
+
+/*Use Flexbox*/
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-container { 
+    min-width: 0;
+    margin: 5px;
+}
+
+.btn {
+    position: relative;
+    background-color: rgb(10, 81, 139);
+    text-decoration: none;
+    color: white;
+    border: solid 1px;
+    padding: 1em;
+    text-align: center;
+    font-family: "Aileron-Regular", Arial, sans-serif;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+	transform: translate(-50%, -50%); 
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    padding: 1em;
+    border-radius: 10px;
+    animation: fade 2s infinite;
+    transition: opacity 1s ease-out;
+}
+.btn:hover {
+    /*opacity: 0.5;	/*(1 is full opacity, 0 is no opacity)*/
+    text-decoration: none;
+    color: white;
+    background-color: rgb(112, 189, 252); /*changes button color to red when clicked*/
+    transform: translate(-50%, -50%) scale(1.5); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: buttonGrow 5s; /* Safari 4+ */
+    -moz-animation: buttonGrow 5s; /* Fx 5+ */
+    -o-animation: buttonGrow 5s; /* Opera 12+ */
+    animation: buttonGrow 5s; /* IE 10+, Fx 29+ */
+}
+
+/*apply state to button when clicked*/
+.btn:active {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(100, 23, 151) ease ; /*changes button color to purple when clicked*/
+}
+
+/*keyframe animations*/
+@-webkit-keyframes buttonGrow {
+    /*how you want it to transition*/
+    0% {opacity: 0; transform: scale(1.5) ease;}
+    
+    100% {opacity: 1; transform: scale(1) ease;}
+}
+
+@-moz-keyframes buttonGrow {
+    /*how you want it to transition*/
+    0% {opacity: 0; transform: scale(1.5) ease;}
+    
+    100% {opacity: 1; transform: scale(1) ease;}
+}
+
+@-o-keyframes buttonGrow {
+    /*how you want it to transition*/
+    0% {opacity: 0; transform: scale(1.5) ease;}
+    
+    100% {opacity: 1; transform: scale(1) ease;}
+}
+
+@keyframes buttonGrow {
+    /*how you want it to transition*/
+    0% {opacity: 0; transform: scale(1.5) ease;}
+    
+    100% {opacity: 1; transform: scale(1) ease;}
+}
+
+.box {
+    position: relative;
+    height: 200px; 
+    background: rgb(10, 81, 139);
+    border: 25px solid rgb(10, 81, 139);
+    margin: 0;
+
+}
+
+.bar {
+    position: relative;
+    height: 10px;
+    background: rgb(0, 0, 0);
+    border: 15px solid rgb(0, 0, 0);  
+}
+
+
+.copyright {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    vertical-align: middle;
+    text-align: left;
+    /*border: 10px solid rgb(0, 0, 0);*/
+    color: white;
+    font-family: "Aileron-Regular", Arial, sans-serif;
+}
