@@ -4,6 +4,7 @@
 
 html {
     font-family: "aileronregular", Arial, sans-serif;
+    font-size: 1em;
 }
 
 a {
@@ -37,6 +38,7 @@ header {
 .boxText {
     color: white;
     text-align: center;
+    padding: 2%;
 }
 
 .links{
@@ -95,22 +97,19 @@ header {
     text-decoration: none;
     color: black;
     border: solid 1px;
-    padding: 5px 30px 5px 30px;
+    padding: 5px;
     text-align: center;
     display: block;
-    transform: translate(-50%, -50%); 
-    top: 10%;
-    left: 50%;
     width: 100px;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px auto;
     cursor: pointer;
     border-radius: 5px;
     animation: fade 2s infinite;
 }
 .btn:hover {
     text-decoration: none;
-    transform: translate(-50%, -50%) scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
 
     -webkit-animation: buttonGrow 5s; /* Safari 4+ */
     -moz-animation: buttonGrow 5s; /* Fx 5+ */
@@ -151,17 +150,102 @@ header {
 
 .flex-container {
     position: absolute;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 40px;
     display: flex;
     text-align: center;
     flex-direction: row;
     justify-content: space-between;
+    font-size: .85em;
 }
 
 .boxIcon {
     position: relative;
     text-align: center;
-    top: 15%;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     font-size: 3em; 
     color:black;
+}
+
+.leftTxt {
+    padding: 5%;
+}
+
+
+.midTxt {
+    padding: 5%;
+
+}
+
+.rightTxt {
+    padding: 5%;
+
+}
+
+@media only screen and (max-width: 768px){
+	/*start overwriting and changing position*/
+	/*keep font size above 12px*/
+    header {
+        transform: none;
+		position: relative;
+		width: 100%;
+        padding: 1em;
+        font-size: 12px;
+    }
+
+    .headerIcon {
+        position: relative;
+        text-align: right;
+        /*transform: translate(-50%, -50%);
+        top: 50%;
+        left: 20%;*/
+        right: 0 auto;
+        top: 15%;
+        font-size: 3em; 
+        color:white;
+    }
+
+    .links{
+        position: absolute;
+        text-align: left;
+        /*transform: translate(-50%, -50%);
+        top: 50%;
+        left: 20%;*/
+        left: 0 auto;
+        top: 50%;
+        color: white;
+    }
+
+    .box {
+        transform: none;
+		position: relative;
+		width: 100%;
+        padding: 1em;
+        font-size: 12px;
+    }
+    
+	.flex-container {
+		transform: none;
+		position: relative;
+		width: 100%;
+        padding: 1em;
+        font-size: 12px;
+    }
+    
+    /*
+    .leftBox {
+        transform: none;
+        width: 100%;
+    }
+
+    .midBox {
+        transform: none;
+        width: 100%;
+    }
+
+    .rightBox {
+        transform: none;
+        width: 100%;
+    }
+    */
 }
