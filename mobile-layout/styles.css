@@ -3,7 +3,7 @@
 */
 
 html {
-    font-family: "Aileron-Regular", Arial, sans-serif;
+    font-family: "aileronregular", Arial, sans-serif;
 }
 
 a {
@@ -13,48 +13,57 @@ a {
     color: black;
 }
 
+.inner-content {
+    max-width: 1024px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+
 header {
     height: 50px;
     position: relative;
+    background-color: black;
 }
 
 .headerIcon {
     position: relative;
     text-align: right;
-    top: 15%;
+    right: 10%;
     font-size: 3em; 
-    color:purple
+    color:white;
 }
 
 .boxText {
     color: white;
+    text-align: center;
 }
 
 .links{
     position: absolute;
     text-align: left;
-    top: 15%;
-    margin: 10px 10px 10px 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 20%;
+    color: white;
 }
 
 .lnk1 {
     position: relative;
     margin: 10px;
+    color: white;
 }
 
 .lnk2 {
     position: relative;
     margin: 10px;
+    color: white;
 }
 
 .lnk3 {
     position: relative;
     margin: 10px;
-}
-
-
-h2 {
-    font-family: "aileron-bold-webfont", Arial, sans-serif;
+    color: white;
 }
 
 .exampleHeadline {
@@ -68,9 +77,16 @@ h2 {
     position: relative;
     text-align: center;
     background-color: rgb(189, 189, 189);
-    padding: 25px 25px 25px 25px;
     display: block;
     margin: 0 auto;
+}
+
+.boxDiv{
+    position: relative;
+    padding: 10%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .btn {
@@ -147,5 +163,5 @@ h2 {
     top: 15%;
     margin: 10px 10px 10px 10px;
     font-size: 3em; 
-    color:purple
+    color:black;
 }
