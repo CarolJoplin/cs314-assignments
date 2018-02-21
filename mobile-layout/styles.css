@@ -222,7 +222,7 @@ header {
     }
 
     .header-content {
-        max-width: 650px;
+        max-width: 654px;
         margin: 0 auto;
         position: relative;
     }
@@ -230,10 +230,7 @@ header {
     .headerIcon {
         position: relative;
         text-align: right;
-        /*transform: translate(-50%, -50%);
-        top: 50%;
-        left: 20%;*/
-        right: 0;
+        right: 30px;
         font-size: 3em; 
         color:white;
     }
@@ -241,9 +238,6 @@ header {
     .links{
         position: absolute;
         text-align: left;
-        /*transform: translate(-50%, -50%);
-        top: 50%;
-        left: 20%;*/
         left: 0;
         top: 50%;
         color: white;
