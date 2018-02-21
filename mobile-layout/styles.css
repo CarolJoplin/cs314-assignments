@@ -35,14 +35,14 @@ header {
 .headerIcon {
     position: relative;
     text-align: right;
-    right: 0;
+    /*right: 0 auto;*/
     font-size: 3em; 
     color:white;
 }
 .header-content {
-    padding: 0px 40px 0px 50px;
-	margin: 0 auto;
-	position: relative;
+    padding: 0px 60px 0px 60px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .boxText {
@@ -56,26 +56,26 @@ header {
     text-align: left;
     transform: translateY(-50%);
     top: 50%;
-    /* left: 20%; */
-    left: 0;
     color: white;
 }
 
 .lnk1 {
     position: relative;
-    margin: 10px;
+    padding-left: 0px;
+    padding-right: 10px;
     color: white;
 }
 
 .lnk2 {
     position: relative;
-    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: white;
 }
 
 .lnk3 {
     position: relative;
-    margin: 10px;
+    padding-left: 10px;
     color: white;
 }
 
@@ -162,7 +162,7 @@ header {
 
 .flex-container {
     position: absolute;
-    padding: 40px;
+    /* padding: 40px; */
     display: flex;
     text-align: center;
     flex-direction: row;
@@ -221,8 +221,7 @@ header {
     }
 
     .header-content {
-        max-width: 654px;
-        top: 11%;
+        padding: 0px 60px 0px 60px;
         margin: 0 auto;
         position: relative;
     }
@@ -230,50 +229,92 @@ header {
     .headerIcon {
         position: relative;
         text-align: right;
+        padding: 6px 0px 0px 0px;
         right: 0px;
         top: 50%;
         font-size: 3em; 
         color:white;
     }
-
+    /*
     .links{
         position: absolute;
         text-align: left;
-        left: 0;
+        /*transform: translateY(-50%);*/
+        /* left: 20%; 
         top: 50%;
         color: white;
     }
+    */
+    .links{
+        position: absolute;
+        text-align: left;
+        transform: translateY(-50%);
+        top: 50%;
+        padding: 6px 0px 0px 0px;
+        /* left: 20%; */
+        /*left: 0 auto;*/
+        color: white;
+    }
+    
+    .lnk1 {
+        position: relative;
+        /* margin: 10px; */
+        padding-left: 0px;
+        padding-right: 10px;
+        color: white;
+    }
+    
+    .lnk2 {
+        position: relative;
+        /* margin: 10px; */
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+    }
+    
+    .lnk3 {
+        position: relative;
+        /* margin: 10px; */
+        padding-left: 10px;
+        color: white;
+    }
+    
 
     .box {
         transform: none;
 		position: relative;
 		width: 100%;
-        padding: 1em;
         font-size: 12px;
     }
     
 	.flex-container {
-		transform: none;
+        transform: none;
         position: relative;
         flex-wrap: wrap;
-		width: 100%;
-        padding: 1em;
+        width: 100%;
+        /* padding: 1em; */
         font-size: 12px;
     }
     
     .leftBox {
         transform: none;
         width: 100%;
+        margin: 0px 0px 20px 0px;
+        /*border: 1px solid rgb(189, 189, 189);*/
     }
 
     .midBox {
         transform: none;
         width: 100%;
+        margin: 0px 0px 20px 0px;
+        /*border: 1px solid rgb(189, 189, 189);*/
     }
 
     .rightBox {
         transform: none;
         width: 100%;
+        margin: 0px 0px 20px 0px;
+        /*border: 1px solid rgb(189, 189, 189);*/
     }
 
     .btn {
