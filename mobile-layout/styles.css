@@ -48,6 +48,7 @@ header {
 .boxText {
     color: white;
     text-align: center;
+    line-height: 1.6;
     padding: 2%;
 }
 
@@ -195,16 +196,19 @@ header {
 
 .leftTxt {
     padding: 10px;
+    line-height: 1.6;
 }
 
 
 .midTxt {
     padding: 10px;
+    line-height: 1.6;
 
 }
 
 .rightTxt {
     padding: 10px;
+    line-height: 1.6;
 
 }
 
