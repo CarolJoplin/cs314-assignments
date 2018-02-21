@@ -7,6 +7,11 @@ html {
     font-size: 1em;
 }
 
+h2 {
+    font-family: "aileronbold", Arial, sans-serif;
+    /*text-transform: none;*/
+}
+
 a {
     padding-left: 10px;
     padding-right: 10px;
@@ -30,9 +35,14 @@ header {
 .headerIcon {
     position: relative;
     text-align: right;
-    right: 10%;
+    right: 0;
     font-size: 3em; 
     color:white;
+}
+.header-content {
+    max-width: 800px;
+	margin: 0 auto;
+	position: relative;
 }
 
 .boxText {
@@ -44,9 +54,10 @@ header {
 .links{
     position: absolute;
     text-align: left;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
     top: 50%;
-    left: 20%;
+    /* left: 20%; */
+    left: 0;
     color: white;
 }
 
@@ -72,6 +83,7 @@ header {
     position: relative;
     margin: 0 15px 15px 15px;
     padding: 0;
+    font-size: 2.5em;
 }
 
 .box {
@@ -150,7 +162,6 @@ header {
 
 .flex-container {
     position: absolute;
-    border: 1px solid rgb(189, 189, 189);
     padding: 40px;
     display: flex;
     text-align: center;
@@ -162,9 +173,9 @@ header {
 .boxIcon {
     position: relative;
     text-align: center;
-    margin: 10px;
-    font-size: 3em; 
-    color:black;
+    margin: 10px 10px 0px 10px;
+    font-size: 3em;
+    color: black;
 }
 
 .leftBox {
@@ -183,29 +194,37 @@ header {
 }
 
 .leftTxt {
-    padding: 5%;
+    padding: 10px;
 }
 
 
 .midTxt {
-    padding: 5%;
+    padding: 10px;
 
 }
 
 .rightTxt {
-    padding: 5%;
+    padding: 10px;
 
 }
 
 @media only screen and (max-width: 768px){
 	/*start overwriting and changing position*/
 	/*keep font size above 12px*/
+
     header {
         transform: none;
-		position: relative;
+        position: relative;
+        height: 50px;
 		width: 100%;
         padding: 1em;
         font-size: 12px;
+    }
+
+    .header-content {
+        max-width: 650px;
+        margin: 0 auto;
+        position: relative;
     }
 
     .headerIcon {
@@ -214,8 +233,7 @@ header {
         /*transform: translate(-50%, -50%);
         top: 50%;
         left: 20%;*/
-        right: 0 auto;
-        top: 15%;
+        right: 0;
         font-size: 3em; 
         color:white;
     }
@@ -226,7 +244,7 @@ header {
         /*transform: translate(-50%, -50%);
         top: 50%;
         left: 20%;*/
-        left: 0 auto;
+        left: 0;
         top: 50%;
         color: white;
     }
@@ -261,5 +279,62 @@ header {
     .rightBox {
         transform: none;
         width: 100%;
+    }
+
+    .btn {
+        position: relative;
+        background-color: rgb(218, 218, 218);
+        text-decoration: none;
+        color: black;
+        border: solid 1px;
+        padding: 5px;
+        text-align: center;
+        display: block;
+        width: 85px;
+        font-size: 12px;
+        margin: 4px auto;
+        cursor: pointer;
+        border-radius: 5px;
+        animation: fade 2s infinite;
+    }
+    .btn:hover {
+        text-decoration: none;
+        transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+    
+        -webkit-animation: buttonGrow 5s; /* Safari 4+ */
+        -moz-animation: buttonGrow 5s; /* Fx 5+ */
+        -o-animation: buttonGrow 5s; /* Opera 12+ */
+        animation: buttonGrow 5s; /* IE 10+, Fx 29+ */
+    }
+    
+    /*apply state to button when clicked*/
+    .btn:active {
+        text-decoration: none;
+        color: white;
+    }
+    
+    /*keyframe animations*/
+    @-webkit-keyframes buttonGrow {
+        /*how you want it to transition*/
+        0% {transform: scale(1) ease;}
+        100% {transform: scale(1.15) ease;}
+    }
+    
+    @-moz-keyframes buttonGrow {
+        /*how you want it to transition*/
+        0% {transform: scale(1) ease;}
+        100% {transform: scale(1.15) ease;}
+    }
+    
+    @-o-keyframes buttonGrow {
+        /*how you want it to transition*/
+        0% {transform: scale(1) ease;}
+        100% {transform: scale(1.15) ease;}
+    }
+    
+    @keyframes buttonGrow {
+        /*how you want it to transition*/
+        0% {transform: scale(1) ease;}
+        100% {transform: scale(1.15) ease;}
     }
 }
