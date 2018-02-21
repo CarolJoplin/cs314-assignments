@@ -167,6 +167,21 @@ header {
     color:black;
 }
 
+.leftBox {
+    transform: none;
+    width: 30%;
+}
+
+.midBox {
+    transform: none;
+    width: 30%;
+}
+
+.rightBox {
+    transform: none;
+    width: 30%;
+}
+
 .leftTxt {
     padding: 5%;
 }
@@ -226,13 +241,13 @@ header {
     
 	.flex-container {
 		transform: none;
-		position: relative;
+        position: relative;
+        flex-wrap: wrap;
 		width: 100%;
         padding: 1em;
         font-size: 12px;
     }
     
-    /*
     .leftBox {
         transform: none;
         width: 100%;
@@ -247,5 +262,4 @@ header {
         transform: none;
         width: 100%;
     }
-    */
 }
