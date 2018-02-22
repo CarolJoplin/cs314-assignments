@@ -9,7 +9,6 @@ html {
 
 h2 {
     font-family: "aileronbold", Arial, sans-serif;
-    /*text-transform: none;*/
 }
 
 a {
@@ -33,7 +32,6 @@ header {
 }
 
 .headerIcon {
-    position: relative;
     text-align: right;
     /*right: 0 auto;*/
     font-size: 3em; 
@@ -98,7 +96,6 @@ header {
 
 .boxDiv{
     position: relative;
-    padding: 10%;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
@@ -239,30 +236,18 @@ header {
         font-size: 3em; 
         color:white;
     }
-    /*
-    .links{
-        position: absolute;
-        text-align: left;
-        /*transform: translateY(-50%);*/
-        /* left: 20%; 
-        top: 50%;
-        color: white;
-    }
-    */
+    
     .links{
         position: absolute;
         text-align: left;
         transform: translateY(-50%);
         top: 50%;
         padding: 6px 0px 0px 0px;
-        /* left: 20%; */
-        /*left: 0 auto;*/
         color: white;
     }
     
     .lnk1 {
         position: relative;
-        /* margin: 10px; */
         padding-left: 0px;
         padding-right: 10px;
         color: white;
@@ -270,7 +255,6 @@ header {
     
     .lnk2 {
         position: relative;
-        /* margin: 10px; */
         padding-left: 10px;
         padding-right: 10px;
         color: white;
@@ -278,7 +262,6 @@ header {
     
     .lnk3 {
         position: relative;
-        /* margin: 10px; */
         padding-left: 10px;
         color: white;
     }
