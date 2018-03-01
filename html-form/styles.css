@@ -7,16 +7,26 @@ html {
     font-size: 1em;
 }
 
-h2 {
-    font-family: "aileronbold", Arial, sans-serif;
+h1 {
+    margin: 0 auto;
 }
 
-a {
-    padding-left: 10px;
-    padding-right: 10px;
-    text-decoration: none;
-    color: black;
+.box {
+    height: 250px;
+    position: relative;
+    text-align: center;
+    background-color: coral;
+    display: block;
+    margin: 0 auto;
 }
+
+.topBox{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
 
 .inner-content {
     max-width: 1024px;
@@ -25,81 +35,80 @@ a {
 	height: 100%;
 }
 
-header {
-    height: 50px;
+.flex-container {
     position: relative;
-    background-color: black;
-}
-
-.headerIcon {
-    text-align: right;
-    /*right: 0 auto;*/
-    font-size: 3em; 
-    color:white;
-}
-.header-content {
-    padding: 0px 60px 0px 60px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.boxText {
-    color: white;
+    flex-wrap: wrap;
     text-align: center;
-    line-height: 1.6;
-    padding: 2%;
-}
+    
+	/*width: 30%*/
+}	
 
-.links{
-    position: absolute;
+
+
+label {
     text-align: left;
-    transform: translateY(-50%);
-    top: 50%;
-    color: white;
-}
-
-.lnk1 {
-    position: relative;
-    padding-left: 0px;
-    padding-right: 10px;
-    color: white;
-}
-
-.lnk2 {
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: white;
-}
-
-.lnk3 {
-    position: relative;
-    padding-left: 10px;
-    color: white;
-}
-
-.exampleHeadline {
-    position: relative;
-    margin: 0 15px 15px 15px;
-    padding: 0;
-    font-size: 2.5em;
-}
-
-.box {
-    height: 300px;
-    position: relative;
-    text-align: center;
-    background-color: rgb(189, 189, 189);
     display: block;
-    margin: 0 auto;
+    padding: 1em 0 5px;
 }
 
-.boxDiv{
-    position: relative;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+input, select, textarea {
+    font-family: "aileronregular", Arial, sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px coral/*color*/ solid;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: /*text color while typing*/
 }
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border: 2px lightblue/*highlight_color*/ solid;
+    color: lightblue;
+}
+
+input::placeholder, textarea::placeholder {
+    color: coral;/*color of placeholder text*/
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+select {
+    background-color: white;/*color of select bar*/
+}
+
+.radio-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.radio-container label {
+    display: inline;
+    
+}
+
+.radio-container input {
+    width: auto;
+    
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 2em;
+    cursor: pointer;
+    transition: all 0.4s ease;
+} 
+
+input[type="submit"]:hover {
+    color: coral /*hover color*/;
+    background: lightpink/*background color*/
+}
+
 
 .btn {
     position: relative;
@@ -158,151 +167,11 @@ header {
     100% {transform: scale(1.15) ease;}
 }
 
-.flex-container {
-    position: absolute;
-    /* padding: 40px; */
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: .85em;
-}
 
-.boxIcon {
-    position: relative;
-    text-align: center;
-    margin: 10px 10px 0px 10px;
-    font-size: 3em;
-    color: black;
-}
-
-.leftBox {
-    transform: none;
-    width: 30%;
-}
-
-.midBox {
-    transform: none;
-    width: 30%;
-}
-
-.rightBox {
-    transform: none;
-    width: 30%;
-}
-
-.leftTxt {
-    padding: 10px;
-    line-height: 1.6;
-}
-
-
-.midTxt {
-    padding: 10px;
-    line-height: 1.6;
-
-}
-
-.rightTxt {
-    padding: 10px;
-    line-height: 1.6;
-
-}
 
 @media only screen and (max-width: 768px){
 	/*start overwriting and changing position*/
 	/*keep font size above 12px*/
-
-    header {
-        transform: none;
-        position: relative;
-        height: 50px;
-		width: 100%;
-        font-size: 12px;
-    }
-
-    .header-content {
-        padding: 0px 60px 0px 60px;
-        margin: 0 auto;
-        position: relative;
-    }
-
-    .headerIcon {
-        position: relative;
-        text-align: right;
-        padding: 6px 0px 0px 0px;
-        right: 0px;
-        top: 50%;
-        font-size: 3em; 
-        color:white;
-    }
-    
-    .links{
-        position: absolute;
-        text-align: left;
-        transform: translateY(-50%);
-        top: 50%;
-        padding: 6px 0px 0px 0px;
-        color: white;
-    }
-    
-    .lnk1 {
-        position: relative;
-        padding-left: 0px;
-        padding-right: 10px;
-        color: white;
-    }
-    
-    .lnk2 {
-        position: relative;
-        padding-left: 10px;
-        padding-right: 10px;
-        color: white;
-    }
-    
-    .lnk3 {
-        position: relative;
-        padding-left: 10px;
-        color: white;
-    }
-    
-
-    .box {
-        transform: none;
-		position: relative;
-		width: 100%;
-        font-size: 12px;
-    }
-    
-	.flex-container {
-        transform: none;
-        position: relative;
-        flex-wrap: wrap;
-        width: 100%;
-        /* padding: 1em; */
-        font-size: 12px;
-    }
-    
-    .leftBox {
-        transform: none;
-        width: 100%;
-        margin: 0px 0px 20px 0px;
-        /*border: 1px solid rgb(189, 189, 189);*/
-    }
-
-    .midBox {
-        transform: none;
-        width: 100%;
-        margin: 0px 0px 20px 0px;
-        /*border: 1px solid rgb(189, 189, 189);*/
-    }
-
-    .rightBox {
-        transform: none;
-        width: 100%;
-        margin: 0px 0px 20px 0px;
-        /*border: 1px solid rgb(189, 189, 189);*/
-    }
 
     .btn {
         position: relative;

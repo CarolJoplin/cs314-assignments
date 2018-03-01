@@ -1,11 +1,79 @@
+<!--Carol Joplin-->
+<!--Simple Webpage-->
+
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--reference to css style sheets-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="aileron_package/stylesheet.css">
     <title>Assignment 5</title>
   </head>
   <body>
-    <!-- Body content goes here -->
+    <div class="inner-content">
+      <div class="box">
+        <div class="topBox">
+          <h1>Hi There!</h1>
+          <p>Tell me a little bit about yourself!</p>
+        </div>
+      </div>
+    </div>
+    <div class="inner-content">
+      <div class="flex-container">
+        <form class="nameLabel">
+          <label for="first">First Name:</label>
+          <input name="textbox" id="#firstName" placeholder="Enter your first name">
+        </form>
+
+        <form class="nameLabel">
+          <label for="last">Last Name:</label>
+          <input name="textbox" id="#lastName" placeholder="Enter your last name">
+        </form>	
+
+        <form class="emailForm">
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="emailBox" placeholder="Enter your email address">
+        </form>
+
+        <form class="rButtons">
+          <label for="radio">Dog Person</label>
+          <input type="radio" name="radioOne"> 
+
+          <label for="radio">Cat Person</label>
+          <input type="radio" name="radioOne"> 
+
+          <label for="radio">Hamster Person</label>
+          <input type="radio" name="radioOne"> 
+
+          <label for="radio">Dragon Person</label>
+          <input type="radio" name="radioOne"> 
+        </form>
+        
+        <form class="textArea">
+          <label for="radio">About you</label>
+          <textarea rows="4" cols="50" id="#txtArea" placeholder="Enter some cool facts about you"></textarea>
+        </form>
+
+        <select name="seasons">
+            <option value="Winter">Winter</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+            <option value="Fall">Fall</option>
+        </select>
+
+        <form class="submitButton">
+          <input type="submit" value="Click Me!">
+        </form>
+
+      </div>
+    </div>
+
+    <div class="inner-content">
+        
+    </div>
   </body>
 </html>
