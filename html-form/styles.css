@@ -39,17 +39,16 @@ h1 {
     position: relative;
     flex-wrap: wrap;
     text-align: center;
-    
-	/*width: 30%*/
+    align-items: center;
+    margin: 0% 10%;
 }	
-
-
 
 label {
     text-align: left;
     display: block;
     padding: 1em 0 5px;
 }
+
 
 input, select, textarea {
     font-family: "aileronregular", Arial, sans-serif;
@@ -58,7 +57,7 @@ input, select, textarea {
     border: 2px coral/*color*/ solid;
     border-radius: 5px;
     padding: 0.5em;
-    color: /*text color while typing*/
+    color: coral;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -74,26 +73,25 @@ input::placeholder, textarea::placeholder {
 textarea {
     height: 100px;
     resize: none;
+    
 }
 
 select {
-    background-color: white;/*color of select bar*/
+    background-color: white;
 }
 
-.radio-container {
+.rButtons {
     display: flex;
     justify-content: space-around;
     margin-top: 1em;
 }
 
-.radio-container label {
+.rButtons label {
     display: inline;
-    
 }
 
-.radio-container input {
+.rButtons input {
     width: auto;
-    
 }
 
 input[type="submit"] {
