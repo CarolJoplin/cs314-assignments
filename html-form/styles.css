@@ -49,7 +49,6 @@ label {
     padding: 1em 0 5px;
 }
 
-
 input, select, textarea {
     font-family: "aileronregular", Arial, sans-serif;
     width: 100%;
@@ -107,124 +106,19 @@ input[type="submit"]:hover {
     background: lightpink/*background color*/
 }
 
-
-.btn {
-    position: relative;
-    background-color: rgb(218, 218, 218);
-    text-decoration: none;
-    color: black;
-    border: solid 1px;
-    padding: 5px;
-    text-align: center;
-    display: block;
-    width: 100px;
-    font-size: 16px;
-    margin: 4px auto;
-    cursor: pointer;
-    border-radius: 5px;
-    animation: fade 2s infinite;
-}
-.btn:hover {
-    text-decoration: none;
-    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
-
-    -webkit-animation: buttonGrow 5s; /* Safari 4+ */
-    -moz-animation: buttonGrow 5s; /* Fx 5+ */
-    -o-animation: buttonGrow 5s; /* Opera 12+ */
-    animation: buttonGrow 5s; /* IE 10+, Fx 29+ */
-}
-
-/*apply state to button when clicked*/
-.btn:active {
-    text-decoration: none;
-    color: white;
-}
-
-/*keyframe animations*/
-@-webkit-keyframes buttonGrow {
-    /*how you want it to transition*/
-    0% {transform: scale(1) ease;}
-    100% {transform: scale(1.15) ease;}
-}
-
-@-moz-keyframes buttonGrow {
-    /*how you want it to transition*/
-    0% {transform: scale(1) ease;}
-    100% {transform: scale(1.15) ease;}
-}
-
-@-o-keyframes buttonGrow {
-    /*how you want it to transition*/
-    0% {transform: scale(1) ease;}
-    100% {transform: scale(1.15) ease;}
-}
-
-@keyframes buttonGrow {
-    /*how you want it to transition*/
-    0% {transform: scale(1) ease;}
-    100% {transform: scale(1.15) ease;}
-}
-
-
-
 @media only screen and (max-width: 768px){
-	/*start overwriting and changing position*/
-	/*keep font size above 12px*/
 
-    .btn {
-        position: relative;
-        background-color: rgb(218, 218, 218);
-        text-decoration: none;
-        color: black;
-        border: solid 1px;
-        padding: 5px;
-        text-align: center;
-        display: block;
-        width: 85px;
-        font-size: 12px;
-        margin: 4px auto;
+    input[type="submit"] {
+        width: auto;
+        padding: 10px 20px;
+        margin-top: 2em;
         cursor: pointer;
-        border-radius: 5px;
-        animation: fade 2s infinite;
-    }
-    .btn:hover {
-        text-decoration: none;
-        transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+        transition: all 0.4s ease;
+        background-color: white;
+    } 
     
-        -webkit-animation: buttonGrow 5s; /* Safari 4+ */
-        -moz-animation: buttonGrow 5s; /* Fx 5+ */
-        -o-animation: buttonGrow 5s; /* Opera 12+ */
-        animation: buttonGrow 5s; /* IE 10+, Fx 29+ */
-    }
-    
-    /*apply state to button when clicked*/
-    .btn:active {
-        text-decoration: none;
-        color: white;
-    }
-    
-    /*keyframe animations*/
-    @-webkit-keyframes buttonGrow {
-        /*how you want it to transition*/
-        0% {transform: scale(1) ease;}
-        100% {transform: scale(1.15) ease;}
-    }
-    
-    @-moz-keyframes buttonGrow {
-        /*how you want it to transition*/
-        0% {transform: scale(1) ease;}
-        100% {transform: scale(1.15) ease;}
-    }
-    
-    @-o-keyframes buttonGrow {
-        /*how you want it to transition*/
-        0% {transform: scale(1) ease;}
-        100% {transform: scale(1.15) ease;}
-    }
-    
-    @keyframes buttonGrow {
-        /*how you want it to transition*/
-        0% {transform: scale(1) ease;}
-        100% {transform: scale(1.15) ease;}
+    input[type="submit"]:hover {
+        color: coral /*hover color*/;
+        background: lightpink/*background color*/
     }
 }
