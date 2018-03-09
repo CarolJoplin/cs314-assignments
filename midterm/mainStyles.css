@@ -1,0 +1,1069 @@
+html {
+    font-family: "ralewayregular", Arial, sans-serif;
+    font-size: 1em;
+}
+
+.intro-page-background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url("hat1.jpeg");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    /* color: #775A4A; */
+    color: #1B3035;
+}
+
+.home {
+    position: relative;
+    margin: 10px;
+}
+
+.about {
+    position: relative;
+    margin: 10px;
+}
+
+.tba {
+    position: relative;
+    margin: 10px;
+}
+
+.front-page {
+    height: 100%; /* Do not adjust - this is perfect with the picture */
+}
+
+.links {
+    position: relative;
+    text-align: right;
+    display: block;
+    margin: 0 auto;
+    border: 15px solid transparent;
+    background: transparent;
+    /* background: rgba(0,0,0,0.1); */
+    color: #E9E8EF;
+    font-weight: 900;
+}
+
+.flex-head {
+    position: relative;
+    display: flex;
+    margin: 0% 5%; /* Do not adjust - this is perfect with the picture */
+    text-align: left;
+    justify-content: Left;
+    flex-direction: column;
+    background: transparent;
+    color: #1B3035;
+    font-weight: 900;
+}
+/********************/
+/*Biography*/
+.bio {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    background: whitesmoke;
+    border: 25px solid whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.name {
+    border-right: 50px solid whitesmoke;
+}
+
+.bio-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.bio-text {
+    position: relative;
+    text-align: center;
+    justify-content: left;
+    background: whitesmoke;
+    border: 50px solid whitesmoke;
+    color: #1B3035;
+    font-size: 1.5em;
+}
+
+.bio-image {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    background: whitesmoke;
+    border-right: 50px solid whitesmoke;
+    margin-bottom: 4%;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+/*Employment*/
+.employment {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background: whitesmoke;
+    border: 25px solid whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.relevant-employment {
+    border-left: 50px solid whitesmoke;
+}
+
+    /* Gonzaga TA*/
+.gonzaga-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.gonzaga-TA-text {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background: whitesmoke;
+    border: 50px solid whitesmoke;
+    border-top: none;
+    color: #1B3035;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+
+
+.gonzaga-TA-img {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    background: whitesmoke;
+    border-left: 50px solid whitesmoke;
+    margin-bottom: 4%;
+    color: #1B3035;
+    /* font-weight: 900; */
+}
+
+    /* SCC Tutoring*/
+.scc-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.scc-text {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background: whitesmoke;
+    border: 50px solid whitesmoke;
+    color: #1B3035;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+
+.scc-img {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    background: whitesmoke;
+    border-left: 50px solid whitesmoke;
+    margin-bottom: 4%;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+    /* SCC Tutoring*/
+.spl-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.spl-text {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background: whitesmoke;
+    border: 50px solid whitesmoke;
+    color: #1B3035;
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+
+.spl-img {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    background: whitesmoke;
+    border-left: 50px solid whitesmoke;
+    margin-bottom: 4%;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+/********************/
+/*Technical Skills*/
+.skills {
+    /*transparent background over a tree pic*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    border: 25px solid whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.technical-skills {
+    border-left: 50px solid transparent;
+}
+.technologies {
+    border-left: 50px solid transparent;
+}
+.technologies-icons {
+    position: relative;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: whitesmoke;
+    border-left: 50px solid whitesmoke;
+    margin-bottom: 4%;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.python {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.python-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.java {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.java-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.c-plus-plus {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.c-plus-plus-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.JS {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.JS-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.jQuery {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.jQuery-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.node {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+
+}
+.node-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.meteor {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.meteor-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.Clang {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.Clang-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.sql {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.sql-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.swipl {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.swipl-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.haskell {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.haskell-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.assembly {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.assembly-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.ada {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.ada-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.mac {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.mac-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.Windows {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.Windows-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.linux {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.linux-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.xcode {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.xcode-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.eclipse {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.eclipse-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.netbeans {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.netbeans-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+.codeblocks {
+    position: relative;
+    text-align: center;
+    margin: 1%;
+}
+.codeblocks-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+}
+
+/********************/
+
+.python-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+    display: block;
+    opacity: 1;
+
+    -webkit-animation: labelShow 5s; /* Safari 4+ */
+    -moz-animation: labelShow 5s; /* Fx 5+ */
+    -o-animation: labelShow 5s; /* Opera 12+ */
+    animation: labelShow 5s; /* IE 10+, Fx 29+ */
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.java-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.c-plus-plus-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.JS-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.jQuery-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.node-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.meteor-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.Clang-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.sql-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.swipl-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.haskell-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.assembly-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.ada-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.mac-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.windows-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.linux-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.xcode-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.eclipse-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.netbeans-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+.codeblocks-img:hover {
+    text-decoration: none;
+    transform: scale(1.15); /*translate keeps it in the same spot when it gets bigger*/
+
+    -webkit-animation: iconGrow 5s; /* Safari 4+ */
+    -moz-animation: iconGrow 5s; /* Fx 5+ */
+    -o-animation: iconGrow 5s; /* Opera 12+ */
+    animation: iconGrow 5s; /* IE 10+, Fx 29+ */
+}
+/*keyframe animations*/
+@-webkit-keyframes iconGrow {
+    /*how you want it to transition*/
+    0% {transform: scale(1) ease;}
+    100% {transform: scale(1.15) ease;}
+}
+@-moz-keyframes iconGrow {
+    /*how you want it to transition*/
+    0% {transform: scale(1) ease;}
+    100% {transform: scale(1.15) ease;}
+}
+@-o-keyframes iconGrow {
+    /*how you want it to transition*/
+    0% {transform: scale(1) ease;}
+    100% {transform: scale(1.15) ease;}
+}
+@keyframes iconGrow {
+    /*how you want it to transition*/
+    0% {transform: scale(1) ease;}
+    100% {transform: scale(1.15) ease;}
+}
+
+/********************/
+/*Label Hover States*/
+/* 
+.python-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.java-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.c-plus-plus-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.JS-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.jQuery-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.node-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.meteor-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.Clang-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.sql-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.swipl-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.haskell-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.assembly-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.ada-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.mac-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.windows-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.linux-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.xcode-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.eclipse-txt:hover {
+    text-decoration: none;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+   -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.netbeans-txt:hover {
+    text-decoration: none;
+    display: block;
+    opacity: 1;
+    transform: scale(1.15) translate(-50%, -50%); translate keeps it in the same spot when it gets bigger
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+.codeblocks-txt:hover {
+    text-decoration: none;
+    display: block;
+    opacity: 1;
+
+    -webkit-animation: labelShow 5s; Safari 4+
+    -moz-animation: labelShow 5s; Fx 5+
+    -o-animation: labelShow 5s; Opera 12+
+    animation: labelShow 5s; IE 10+, Fx 29+
+}
+
+keyframe animations
+@-webkit-keyframes labelShow {
+    how you want it to transition
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes labelShow {
+    how you want it to transition
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes labelShow {
+    how you want it to transition
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes labelShow {
+    how you want it to transition
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} */
+
+
+.projects {
+    border-left: 50px solid whitesmoke;
+}
+
+/********************/
+/*Education*/
+.education {
+    /*transparent background over a tree pic*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    border: 25px solid whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+.relevant-education {
+    border-left: 50px solid transparent;
+}
+.obtained-degrees {
+    display: flex;
+    flex-direction: row;
+}
+.degree {
+    border-left: 50px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+h5.degree {
+    margin-top: 0 auto;
+}
+.school {
+    border-left: 50px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+.year {
+    border-left: 50px solid transparent;
+    display: flex;
+    flex-direction: column;
+}
+
+.coursework {
+    flex: 1;
+}
+.relevant-coursework {
+    border-left: 50px solid transparent;
+}
+.courses {
+    border-left: 50px solid transparent;
+    display: flex;
+}
+.courses-right {
+    border-left: 50px solid transparent;
+}
+
+/*Extracurricular*/
+.extracurricular {
+    /*transparent background over a tree pic*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    border: 25px solid whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.relevant-extras {
+    border-left: 50px solid transparent;
+}
+
+.volunteer-work {
+    border-left: 50px solid transparent;
+}
+
+.organizations {
+    border-left: 50px solid transparent;
+}
+
+.interests {
+    /*transparent background over a tree pic*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: whitesmoke;
+    border: 25px solid whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.relevant-interests {
+    border-left: 50px solid transparent;
+}
+
+/*Footer Bar*/
+.bar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px;
+    color: #D3D8DD;
+}
+
+.copyright {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    right: 0;
+}
+
+.photocred {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.bottomIcons {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.linked {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.git {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
