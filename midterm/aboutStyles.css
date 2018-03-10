@@ -108,16 +108,16 @@ a {
     position: relative;
     text-align: right;
     justify-content: right;
-    flex-direction: row
+    flex-direction: row;
     background: whitesmoke;
     color: #1B3035;
     font-weight: 900;
 }
 
 .setup {
-    padding-right: 50px;
+    padding-left: 50px;
     background-color: transparent;
-    text-align: right;
+    text-align: left;
     color: #35435C;
     margin: 100px 0;
 }
@@ -241,7 +241,7 @@ a {
     padding-left: 50px;
     background-color: transparent;
     text-align: left;
-    color: #35435C;
+    color: #B9CDD4;
     margin: 100px 0;
 }
 
@@ -351,7 +351,7 @@ a {
     position: relative;
     text-align: right;
     justify-content: right;
-    flex-direction: row
+    flex-direction: row;
     background: whitesmoke;
     color: #1B3035;
     font-weight: 900;
@@ -396,6 +396,13 @@ a {
     font-weight: 900;
 }
 
+.fav-rep {
+    padding-left: 50px;
+    background-color: transparent;
+    text-align: center;
+    color: #B9CDD4;
+    margin: 100px 0;
+}
 
 }    
     
@@ -459,7 +466,7 @@ a {
     position: relative;
     text-align: right;
     justify-content: right;
-    flex-direction: row
+    flex-direction: row;
     background: whitesmoke;
     color: #1B3035;
     font-weight: 900;

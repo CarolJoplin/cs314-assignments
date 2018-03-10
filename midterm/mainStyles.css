@@ -4,7 +4,7 @@ html {
 }
 
 .intro-page-background {
-	position: fixed;
+	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-image: url("hat1.jpeg");
@@ -68,8 +68,10 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    background-color: #E5E5EB;
+    opacity: 0.65;
     padding: 15px;
-    color: #D3D8DD;
+    color: #1B3035;
 }
 
 .copyright {
