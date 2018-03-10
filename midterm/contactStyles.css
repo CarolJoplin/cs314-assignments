@@ -11,11 +11,6 @@ h1 {
     margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
-    color: #D3D8DD;
-}
-
 .full-page-background {
 	position: fixed;
 	height: 100%;
@@ -24,17 +19,12 @@ a {
 	background-size: cover;
 }
 
-.links {
-    position: relative;
-    text-align: right;
-    display: block;
-    margin: 0 auto;
-    border: 15px solid transparent;
-    background: transparent;
-    background: rgba(0,0,0,0.3);
-    color: #E9E8EF;
-    font-weight: 900;
+a {
+    text-decoration: none;
+    /* color: #775A4A; */
+    color: #1B3035;
 }
+
 .home {
     position: relative;
     margin: 10px;
@@ -43,9 +33,26 @@ a {
     position: relative;
     margin: 10px;
 }
-.tba {
+.contact {
     position: relative;
     margin: 10px;
+}
+
+.resume {
+    position: relative;
+    margin: 10px;
+}
+
+.links {
+    position: relative;
+    text-align: right;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    background: transparent;
+    /* background: rgba(0,0,0,0.1); */
+    color: #E9E8EF;
+    font-weight: 900;
 }
 
 .header {
@@ -56,10 +63,9 @@ a {
 }
 
 .elements {
-    box-sizing: border-box;
-    padding: 3%;
-    background-color: #A7B7B6;
-    border: 15px solid #A7B7B6;
+    position: relative;
+    background-color: #C4C8C8;
+    padding: 15px;
     height: auto;
 }
 
@@ -180,8 +186,8 @@ input[type="submit"]:hover {
 
     .elements {
         position: relative;
-        background-color: #A7B7B6;
-        border: 15px solid #A7B7B6;
+        background-color: #C4C8C8;
+        padding: 15px;
         height: auto;
     }
 
@@ -231,8 +237,8 @@ input[type="submit"]:hover {
 
     .elements {
         position: relative;
-        background-color: #A7B7B6;
-        border: 15px solid #A7B7B6;
+        background-color: #C4C8C8;
+        padding: 15px;
         height: auto;
     }
 
@@ -251,6 +257,6 @@ input[type="submit"]:hover {
         align-items: flex-end;
         justify-content: space-between;
         padding: 15px;
-        color: white;
+        color: #D3D8DD;
     }
 }

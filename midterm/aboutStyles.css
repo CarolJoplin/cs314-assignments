@@ -1,0 +1,515 @@
+html {
+    font-family: "ralewayregular", Arial, sans-serif;
+    font-size: 1em;
+}
+
+.image-background {
+    position: relative;
+    background-attachment: fixed;
+	min-height: 100%;
+    min-width: 100%;
+    background-image: url("tinytrees.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+a {
+    text-decoration: none;
+    /* color: #775A4A; */
+    color: #1B3035;
+}
+
+.home {
+    position: relative;
+    margin: 10px;
+}
+.about {
+    position: relative;
+    margin: 10px;
+}
+.contact {
+    position: relative;
+    margin: 10px;
+}
+
+.resume {
+    position: relative;
+    margin: 10px;
+}
+
+.links {
+    position: relative;
+    text-align: right;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    background: transparent;
+    /* background: rgba(0,0,0,0.1); */
+    color: #E9E8EF;
+    font-weight: 900;
+}
+
+/********************/
+/*Biography*/
+.bio {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.name {
+    font-family: "ralewaybold", Arial, sans-serif;
+    padding-right: 50px;
+    background-color: transparent;
+    text-align: right;
+    color: #35435C;
+    margin: 100px 0;
+}
+
+.bio-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    /* padding: 25px; */
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.bio-text {
+    position: relative;
+    text-align: center;
+    justify-content: left;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 75px;
+    color: #1B3035;
+    font-size: 1.5em;
+}
+
+.bio-image {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 50px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+/********************/
+
+.gear {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    flex-direction: row
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.setup {
+    padding-right: 50px;
+    background-color: transparent;
+    text-align: right;
+    color: #35435C;
+    margin: 100px 0;
+}
+
+.gear-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    /* padding: 25px; */
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.gear-text {
+    position: relative;
+    text-align: center;
+    justify-content: left;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 75px;
+    color: #1B3035;
+    font-size: 1.5em;
+}
+
+.gear-image {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 50px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+
+.sax-deets {
+    /*transparent background over a tree pic*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background: whitesmoke; */
+    /* padding: 25px; */
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.artists {
+    /*transparent background over a tree pic*/
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: whitesmoke;
+    padding: 25px;
+    padding-top: 0px;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.artists-left {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background-color: whitesmoke;
+    padding-left: 25px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.artists-right {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background-color: whitesmoke;
+    padding-left: 25px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+
+.repertoire {
+    /*transparent background over a tree pic*/
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background: whitesmoke;
+    padding: 25px;
+    padding-top: 0px;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.repertoire-left {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background-color: whitesmoke;
+    padding-left: 25px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.repertoire-right {
+    position: relative;
+    text-align: left;
+    justify-content: left;
+    background-color: whitesmoke;
+    padding-left: 25px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.fav-artists {
+    padding-left: 50px;
+    background-color: transparent;
+    text-align: left;
+    color: #35435C;
+    margin: 100px 0;
+}
+.fav-rep {
+    padding-left: 50px;
+    background-color: transparent;
+    text-align: left;
+    color: #35435C;
+    margin: 100px 0;
+}
+
+/*Footer Bar*/
+.bar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 15px;
+    color: #D3D8DD;
+}
+
+.copyright {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    right: 0;
+}
+
+.photocred {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.bottomIcons {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.linked {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.git {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    html {
+        font-family: "ralewayregular", Arial, sans-serif;
+        font-size: 10px;
+    }
+
+    /*Biography*/
+    .bio {
+        position: relative;
+        text-align: right;
+        justify-content: right;
+        background: whitesmoke;
+        color: #1B3035;
+        font-weight: 900;
+    }
+    
+    .name {
+        font-family: "ralewaybold", Arial, sans-serif;
+        padding-right: 50pxt;
+        background-color: transparent;
+        text-align: right;
+        color: #35435C;
+        margin: 100px 0;
+    }
+    
+    .bio-text-and-image {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        background: whitesmoke;
+        color: #1B3035;
+        font-weight: 900;
+    }
+    
+    .bio-text {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        background: whitesmoke;
+        padding: 50px;
+        padding-top: 0px;
+        color: #1B3035;
+        font-size: 1.5em;
+    }
+    
+    .bio-image {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        background: whitesmoke;
+        padding: 50px;
+        color: #1B3035;
+        font-weight: 900;
+    }
+    
+.gear {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    flex-direction: row
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.setup {
+    padding-right: 50px;
+    background-color: transparent;
+    text-align: right;
+    color: #35435C;
+    margin: 100px 0;
+}
+
+.gear-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    /* padding: 25px; */
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.gear-text {
+    position: relative;
+    text-align: center;
+    justify-content: left;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 75px;
+    color: #1B3035;
+    font-size: 1.5em;
+}
+
+.gear-image {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 50px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+
+}    
+    
+@media only screen and (max-width: 350px){
+    html {
+        font-family: "ralewayregular", Arial, sans-serif;
+        font-size: 10px;
+    }
+
+    /*Biography*/
+    .bio {
+        position: relative;
+        text-align: right;
+        justify-content: right;
+        background: whitesmoke;
+        color: #1B3035;
+        font-weight: 900;
+    }
+    
+    .name {
+        font-family: "ralewaybold", Arial, sans-serif;
+        padding-right: 50pxt;
+        background-color: transparent;
+        text-align: right;
+        color: #35435C;
+        margin: 100px 0;
+    }
+    
+    .bio-text-and-image {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        background: whitesmoke;
+        color: #1B3035;
+        font-weight: 900;
+    }
+    
+    .bio-text {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        background: whitesmoke;
+        padding: 50px 0px;
+        padding-top: 0px;
+        color: #1B3035;
+        font-size: 1.5em;
+    }
+    
+    .bio-image {
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        background: whitesmoke;
+        padding: 50px 0px;
+        color: #1B3035;
+        font-weight: 900;
+    }
+
+.gear {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    flex-direction: row
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.setup {
+    padding-right: 50px;
+    background-color: transparent;
+    text-align: right;
+    color: #35435C;
+    margin: 100px 0;
+}
+
+.gear-text-and-image {
+    position: relative;
+    display: flex;
+    background: whitesmoke;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.gear-text {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 15px 0px;
+    color: #1B3035;
+    font-size: 1.5em;
+}
+
+
+.gear-image {
+    position: relative;
+    text-align: right;
+    justify-content: right;
+    vertical-align: middle;
+    background: whitesmoke;
+    padding: 50px ;
+    color: #1B3035;
+    font-weight: 900;
+}
+
+.fav-rep {
+    padding-left: 50px;
+    background-color: transparent;
+    text-align: center;
+    color: #B9CDD4;
+    margin: 100px 0;
+}
+    
+}
