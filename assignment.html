@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JS in the Browser</title> 
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="assignment-styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head> 
+  <body>
+    <section id="selection">
+      <div class="inner-content">
+        <p>Select the number that you want to scroll to:</p>
+        <button id="oneButton">1</button>
+        <button id="twoButton">2</button>
+        <button id="threeButton">3</button>
+        <button id="fourButton">4</button>
+        <button id="fiveButton">5</button>
+      </div>
+    </section>
+    <section class="dark-bg" id="one">
+      <div class="inner-content">
+        <p>1. Pick a background color:</p>
+        <button id="blue">Blue</button>
+        <button id="green">Green</button>
+      </div>
+    </section>
+    <section id="two">
+      <div class="inner-content">
+        <p>2. Click the button to change between a pink and orange background:</p>
+        <p>The text on the button will represent the color the user will get.</p>
+        <button id="colortoggle">Click for pink!</button>
+      </div>
+    </section>
+    <section class="dark-bg" id="three">
+      <div class="inner-content">
+        <p>3. Input text to add to the list below</p>
+        <input id="item" type="text">
+        <button id="submitButton">Submit</button>
+        <ul id="ul">
+          <li>One</li>
+          <li>Green</li>
+        </ul>
+      </div>
+    </section>
+    <section id="four">
+      <div class="inner-content">
+        <p>4. If an item is clicked, remove it from the list.</p>
+        <ul id="removeList">
+          <li>Bob</li>
+          <li>Tim</li>
+          <li>Jack</li>
+          <li>Sam</li>          
+        </ul>
+      </div>
+    </section>
+    <section class="dark-bg" id="five">
+      <div class="inner-content">
+        <p>5. If an item is clicked, select it (highlight it) and de-select everything else.</p>
+        <p>This doesn't have to be pretty.</p>
+        <p>Just change the background color of the selected item with a class.</p>
+        <ul id="highlightList">
+          <li>Bob</li>
+          <li>Tim</li>
+          <li>Jack</li>
+          <li>Sam</li>          
+        </ul>
+      </div>
+    </section>
+
+    <!-- Added Space at the bottom of the page to show that buttons 1 - 5 -->
+    <!-- scroll to their respective section headers -->
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <script src="index.js"></script>
+  </body>
+</html>
