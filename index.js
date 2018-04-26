@@ -6,23 +6,27 @@
 
 $.ajax({}).done().fail().always();
 
-$.ajax({
-	url: 'https://jsonplaceholder.typicode.com/users/',
-        dataType : "json",
-})
-	
-.done(function( response ) {
-	displayUserData(response);
-})	
 
-.fail(function( status, errorThrown ) {
-	console.log("Error: ", errorThrown);
-	console.log("Status: ", status);
-})
+//$('#buttonClickUser').click(() => {
+	$.ajax({
+		url: 'https://jsonplaceholder.typicode.com/users/',
+        dataType : "json",
+	})
 	
-.always(function() {
-	console.log("Request is complete!");
-})
+    .done(function( response ) {
+		displayUserData(response);
+	})
+	
+	
+	.fail(function( status, errorThrown ) {
+		console.log("Error: ", errorThrown);
+		console.log("Status: ", status);
+	})
+	
+	.always(function() {
+		console.log("Request is complete!");
+	})
+//});
 
 //displayUserData
 //name
@@ -31,10 +35,9 @@ $.ajax({
 function displayUserData(data) {
     //console.log(data);
     for(let user of data) {
-        //console.log(post);
         let userContainer = document.createElement('div');
         userContainer.id = user.id;
-	userContainer.className = 'user-container';
+		userContainer.className = 'user-container';
         
         let userName = document.createElement('h4');
         userName.className = 'user-name';
@@ -42,87 +45,46 @@ function displayUserData(data) {
 
         let email = document.createElement('p');
         email.className = 'user-email';
-	email.innerHTML = user.email;
+		email.innerHTML = user.email;
 		
-	// company name
-	let companyName = document.createElement('p');
+		// company name
+		let companyName = document.createElement('p');
         companyName.className = 'user-company-name';
-	companyName.innerHTML = user.company.name;
+		companyName.innerHTML = user.company.name;
 		
-	let albumsButton = document.createElement('button');
+		let albumsButton = document.createElement('button');
         albumsButton.id = `albums-button-${user.id}`;
-	albumsButton.innerHTML = 'Albums';
+		albumsButton.innerHTML = 'Albums';
 
-	let todosButton = document.createElement('button');
+		let todosButton = document.createElement('button');
         todosButton.id = `todos-button-${user.id}`;
-	todosButton.innerHTML = 'Todos';
+		todosButton.innerHTML = 'Todos';
 
         $('.user').append(userContainer);
-	$(`#${user.id}`).append(userName);
-	$(`#${user.id}`).append(companyName);
-	$(`#${user.id}`).append(email);
+		$(`#${user.id}`).append(userName);
+		$(`#${user.id}`).append(companyName);
+		$(`#${user.id}`).append(email);
 
-	$(`#${user.id}`).append(albumsButton);
-	$(`#${user.id}`).append(todosButton);
+		$(`#${user.id}`).append(albumsButton);
+		$(`#${user.id}`).append(todosButton);
         
         // albums button event listener
         $(`#albums-button-${user.id}`).click((event) => {
-		//albumsButtonClick(event);
-		console.log(user.id);
-		albumsButtonClick(user.id);
-	});
+			//albumsButtonClick(event);
+			console.log(user.id);
+			albumsButtonClick(user.id);
+		});
 		
-	// todos button event listener
-	$(`#todos-button-${user.id}`).click((event) => {
-		//albumsButtonClick(event);
-		todosButtonClick(user.id);
+		// todos button event listener
+		$(`#todos-button-${user.id}`).click((event) => {
+			//albumsButtonClick(event);
+			todosButtonClick(user.id);
         });
 		
-        // $(albumsButton).click((event) => {
-        //     albumsButtonClick(user.id);
-        // });
     }
 }
-/*function displayPosts(data) {
-    console.log(data);
-    for(let post of data) {
-        //console.log(post);
-        let postContainer = document.createElement('div');
-        postContainer.id = post.id;
-        postContainer.className = 'post-container';
-        
-        let postTitle = document.createElement('h4');
-        postTitle.className = 'post-title';
-        postTitle.innerHTML = post.title;
-
-        let postBody = document.createElement('p');
-        postBody.className = 'post-body';
-        postBody.innerHTML = post.body;
-        
-        let commentsButton = document.createElement('button');
-        commentsButton.id = `button-${post.id}`;
-        commentsButton.innerHTML = 'Click for comments';
-        
-        $('.posts').append(postContainer);
-        $(`#${post.id}`).append(postTitle);
-        $(`#${post.id}`).append(postBody);
-        $(`#${post.id}`).append(commentsButton);
-        
-        // event listener
-        $(`#button-${post.id}`).click((event) => {
-            commentsButtonClick(event);
-        });
-        
-        $(commentsButton).click((event) => {
-            commentsButtonClick(post.id);
-        });
-    }
-}*/
 
 // if you know todos is clicked, hide albums and visa versa
-// let commentsLoaded = false;
-
-//let albumsLoaded = false;
 function albumsButtonClick(userId) {
 	//console.log(event);
 	console.log(userId);
@@ -134,7 +96,6 @@ function albumsButtonClick(userId) {
 	else // all this:
 		$.ajax({
 			url: `https://jsonplaceholder.typicode.com/albums/`,
-			//url: `https://jsonplaceholder.typicode.com/albums/${userId}/`,
 			dataType : "json",
 		})
 	
@@ -195,17 +156,14 @@ function displayAlbums(albums) {
 	}
 }
 
-//let todosLoaded = false;
+
 function todosButtonClick(userId) {
-	//console.log(event);
-	//console.log(postId);
 	if(event.target.dataset.loaded)
 		// grab todos container and toggle it off
 		$(`#outer-todos-container-${userId}`).toggle();
 	else // all this:
 	$.ajax({
 		url: `https://jsonplaceholder.typicode.com/todos/`,
-		//url: `https://jsonplaceholder.typicode.com/albums/${userId}/`,
 		dataType : "json",
 	})
 	
