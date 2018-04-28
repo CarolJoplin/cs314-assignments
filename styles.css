@@ -1,7 +1,7 @@
 /*
     NAME: CAROL JOPLIN
     DATE: APRIL 23, 2018
-    ASGN: JS-AND-JQUERY
+    ASGN: JS-JQUERY
     FILE: STYLES.CSS
 */
 
@@ -9,18 +9,34 @@ html {
     font-family: 'aileronregular', Verdana, sans-serif;
     text-align: center;
     box-sizing: border-box;
-  }
+}
 
-  .headersection {
-    position: relative;
-    padding: 50px 0;
-    background-color: lightcoral;
-  }
+.headersection {
+  position: relative;
+  padding: 50px 0;
+  background-color: lightcoral;
+}
 
-  .post-container {
+.user-container {
 	border: 2px solid aquamarine;
 	background: rgba(0,0,0, 0.03);
 	padding: 20px;
 	border-radius: 10px;
-	margin: 20px 50px;
+  margin: 20px 50px;
 }
+
+.user-email {
+  padding-bottom: 10px;
+}
+
+button {
+  padding: 5px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+
+}
+
+.h4 {
+  margin-bottom: 10px;
+}
+
