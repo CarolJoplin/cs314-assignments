@@ -31,8 +31,6 @@ $.ajax({
 //email
 //company
 
-let albumsFlag = false;
-let todosFlag = false;
 function displayUserData(data) {
 
     for(let user of data) {
@@ -70,61 +68,45 @@ function displayUserData(data) {
 		$(`#${user.id}`).append(albumsButton);
 		$(`#${user.id}`).append(todosButton);
 		
-		// toggle between albums and todos
+		// toggle between albums and todos:
+		/*
+			The closest I was able to come to this isn't EXACT toggle functionality.
+
+			What it does have:
+				- Ability to toggle between albums and todos.
+			What it lacks:
+				- Ability to toggle between albums and todos by clicking albums and todos buttons
+					respectively, and having each of those lists appear at the click of a button.
+			
+			Having both lines uncommented results in a lack of list collapse functionality.
+		*/
 
         // albums button event listener
         $(`#albums-button-${user.id}`).click((event) => {
-			albumsFlag = true;
-			todosFlag = false;
-
-			// console.log("albumsFlag: " + albumsFlag);
-			// console.log("todosFlag: " + todosFlag);
-
-			albumsButtonClick(event, user.id, albumsFlag, todosFlag);
+			
+			albumsButtonClick(event, user.id);
 			$(`#outer-todos-container-${user.id}`).toggle();
 
-			// if(albumsFlag == true)
-			// 	//console.log('todos toggle');
-			// 	$(`#outer-todos-container-${user.id}`).toggle();
-			// else if(todosFlag == true)
-			// 	//console.log('albums toggle');
-			// 	$(`#outer-albums-container-${user.id}`).toggle();
 		});
 		
 		// todos button event listener
 		$(`#todos-button-${user.id}`).click((event) => {
-			todosFlag = true;
-			albumsFlag = false;
-
-			console.log("albumsFlag: " + albumsFlag);
-			console.log("todosFlag: " + todosFlag);
-			todosButtonClick(event, user.id, todosFlag, albumsFlag);
-			$(`#outer-albums-container-${user.id}`).toggle();
 			
+			todosButtonClick(event, user.id)
+			//$(`#outer-albums-container-${user.id}`).toggle();
 			
-			// if(albumsFlag == true)
-			// 	//console.log('todos toggle');
-			// 	$(`#outer-todos-container-${user.id}`).toggle();
-			// else if(todosFlag == true)
-			// 	//console.log('albums toggle');
-			// 	$(`#outer-albums-container-${user.id}`).toggle();
 		});
 		
     }
 }
 
 // if you know todos is clicked, hide albums and visa versa
-function albumsButtonClick(event, userId, albumsFlag, todosFlag) {
-	// albumsFlag = true;
-	// todosFlag = false;
+function albumsButtonClick(event, userId) {
 
 	if(event.target.dataset.loaded) 
 		// grab comments' container and toggle it off
 		$(`#outer-albums-container-${userId}`).toggle();
 	
-	// else if(todosFlag === true) {
-	// 	$(`#outer-albums-container-${userId}`).hide();
-	// }
 	else // all this:
 		$.ajax({
 			url: `https://jsonplaceholder.typicode.com/users/${userId}/albums/`,
@@ -153,6 +135,8 @@ function displayAlbums(albums) {
 	outerAlbumsContainer.classList = 'outerAlbumsContainer';
 	outerAlbumsContainer.id = `outer-albums-container-${albums[0].userId}`;
 	$(`#${albums[0].userId}`).append(outerAlbumsContainer);
+
+	outerAlbumsContainer.style.border = '2px';
 	
 	for (let album of albums) {
 		
@@ -172,16 +156,11 @@ function displayAlbums(albums) {
 
 }
 
-function todosButtonClick(event, userId, albumsFlag, todosFlag) {
-	// todosFlag = true;
-	// albumsFlag = false;
+function todosButtonClick(event, userId) {
 
 	if(event.target.dataset.loaded)
 		//grab todos container and toggle it off
 		$(`#outer-todos-container-${userId}`).toggle();
-	
-	// else if(albumsFlag === true)
-	// 	$(`#outer-todos-container-${userId}`).hide();
 	
 	else // all this:
 	$.ajax({
