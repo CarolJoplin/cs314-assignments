@@ -30,6 +30,9 @@ $.ajax({
 //name
 //email
 //company
+
+let albumsFlag = false;
+let todosFlag = false;
 function displayUserData(data) {
 
     for(let user of data) {
@@ -71,24 +74,57 @@ function displayUserData(data) {
 
         // albums button event listener
         $(`#albums-button-${user.id}`).click((event) => {
-			albumsButtonClick(event, user.id);
+			albumsFlag = true;
+			todosFlag = false;
+
+			// console.log("albumsFlag: " + albumsFlag);
+			// console.log("todosFlag: " + todosFlag);
+
+			albumsButtonClick(event, user.id, albumsFlag, todosFlag);
+			$(`#outer-todos-container-${user.id}`).toggle();
+
+			// if(albumsFlag == true)
+			// 	//console.log('todos toggle');
+			// 	$(`#outer-todos-container-${user.id}`).toggle();
+			// else if(todosFlag == true)
+			// 	//console.log('albums toggle');
+			// 	$(`#outer-albums-container-${user.id}`).toggle();
 		});
 		
 		// todos button event listener
 		$(`#todos-button-${user.id}`).click((event) => {
-			todosButtonClick(event, user.id);
-        });
+			todosFlag = true;
+			albumsFlag = false;
+
+			console.log("albumsFlag: " + albumsFlag);
+			console.log("todosFlag: " + todosFlag);
+			todosButtonClick(event, user.id, todosFlag, albumsFlag);
+			$(`#outer-albums-container-${user.id}`).toggle();
+			
+			
+			// if(albumsFlag == true)
+			// 	//console.log('todos toggle');
+			// 	$(`#outer-todos-container-${user.id}`).toggle();
+			// else if(todosFlag == true)
+			// 	//console.log('albums toggle');
+			// 	$(`#outer-albums-container-${user.id}`).toggle();
+		});
 		
     }
 }
 
 // if you know todos is clicked, hide albums and visa versa
-function albumsButtonClick(event, userId) {
-	
+function albumsButtonClick(event, userId, albumsFlag, todosFlag) {
+	// albumsFlag = true;
+	// todosFlag = false;
+
 	if(event.target.dataset.loaded) 
 		// grab comments' container and toggle it off
 		$(`#outer-albums-container-${userId}`).toggle();
-		
+	
+	// else if(todosFlag === true) {
+	// 	$(`#outer-albums-container-${userId}`).hide();
+	// }
 	else // all this:
 		$.ajax({
 			url: `https://jsonplaceholder.typicode.com/users/${userId}/albums/`,
@@ -114,6 +150,7 @@ function albumsButtonClick(event, userId) {
 
 function displayAlbums(albums) {
 	let outerAlbumsContainer = document.createElement('div');
+	outerAlbumsContainer.classList = 'outerAlbumsContainer';
 	outerAlbumsContainer.id = `outer-albums-container-${albums[0].userId}`;
 	$(`#${albums[0].userId}`).append(outerAlbumsContainer);
 	
@@ -124,7 +161,6 @@ function displayAlbums(albums) {
 		albumContainer.className = 'album-container';
 		
 		let albumTitle = document.createElement('h5');
-		//albumTitle.className = 'album-title';
 		albumTitle.className = 'album-container';
 		albumTitle.innerHTML = album.title;
 
@@ -133,13 +169,20 @@ function displayAlbums(albums) {
 		$(`${album.userId}`).append(outerAlbumsContainer);
 	
 	}
+
 }
 
-function todosButtonClick(event, userId) {
+function todosButtonClick(event, userId, albumsFlag, todosFlag) {
+	// todosFlag = true;
+	// albumsFlag = false;
 
 	if(event.target.dataset.loaded)
-		// grab todos container and toggle it off
+		//grab todos container and toggle it off
 		$(`#outer-todos-container-${userId}`).toggle();
+	
+	// else if(albumsFlag === true)
+	// 	$(`#outer-todos-container-${userId}`).hide();
+	
 	else // all this:
 	$.ajax({
 		url: `https://jsonplaceholder.typicode.com/users/${userId}/todos/`,
@@ -164,6 +207,7 @@ function todosButtonClick(event, userId) {
 function displayTodos(todos) {
 	
 	let outerTodosContainer = document.createElement('div');
+	outerTodosContainer.classList = 'outerTodosContainer';
 	outerTodosContainer.id = `outer-todos-container-${todos[0].userId}`;
 	$(`#${todos[0].userId}`).append(outerTodosContainer);
 	
@@ -182,4 +226,5 @@ function displayTodos(todos) {
 		$(`${todo.userId}`).append(outerTodosContainer);
 	
 	}
+	
 }
