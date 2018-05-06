@@ -1,0 +1,85 @@
+/*
+    NAME: CAROL JOPLIN
+    DATE: APRIL 23, 2018
+    ASGN: JS-JQUERY
+    FILE: STYLES.CSS
+*/
+
+html {
+    font-family: 'ralewayregular', Verdana, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* LINKS BAR */
+a {
+  text-decoration: none;
+  /* color: #775A4A; */
+  color: #1B3035;
+}
+
+.home {
+  position: relative;
+  margin: 10px;
+}
+.about {
+  position: relative;
+  margin: 10px;
+}
+.contact {
+  position: relative;
+  margin: 10px;
+}
+
+.resume {
+  position: relative;
+  margin: 10px;
+} 
+
+.links {
+  position: relative;
+  text-align: right;
+  display: block;
+  margin: 0 auto;
+  padding: 15px;
+  background: transparent;
+  /* background: rgba(0,0,0,0.1); */
+  color: #E9E8EF;
+  font-weight: 900;
+}
+
+/* HEADER BAR */
+.headersection {
+  /* position: relative;
+  padding: 0px 0px 50px 0;
+  background-color: #A75502;
+  color: whitesmoke; */
+
+  position: relative;
+  padding: 50px 0;
+  /* background-color: #A75502; */
+  background-color: #DB8555;
+  color: whitesmoke;
+}
+
+/* SITE CONTENT */
+.beer-container {
+  position: relative;
+  /* border: 2px solid #59A996; */
+  text-align: left;
+  border: 2px solid #E9BC62;
+	background: rgba(0,0,0, 0.03);
+	padding: 20px;
+	border-radius: 10px;
+  margin: 20px 50px;
+}
+
+button {
+  padding: 5px 20px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+.h4 {
+  margin-bottom: 10px;
+}

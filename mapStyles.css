@@ -1,0 +1,144 @@
+html {
+    font-family: "ralewayregular", Arial, sans-serif;
+    font-size: 1em;
+}
+
+.intro-page-background {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-image: url("hat1.jpeg");
+    background-size: cover; 
+}
+
+a {
+    text-decoration: none;
+    /* color: #775A4A; */
+    color: #1B3035;
+}
+
+.home {
+    position: relative;
+    margin: 10px;
+}
+.about {
+    position: relative;
+    margin: 10px;
+}
+.contact {
+    position: relative;
+    margin: 10px;
+}
+
+.resume {
+    position: relative;
+    margin: 10px;
+}
+
+.links {
+    position: relative;
+    text-align: right;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    background: transparent;
+    /* background: rgba(0,0,0,0.1); */
+    color: #E9E8EF;
+    font-weight: 900;
+}
+
+.front-page {
+    height: 100%; /* Do not adjust - this is perfect with the picture */
+}
+
+.flex-head {
+    position: relative;
+    display: flex;
+    margin: 0% 5%; /* Do not adjust - this is perfect with the picture */
+    text-align: left;
+    justify-content: Left;
+    flex-direction: column;
+    background: transparent;
+    color: #1B3035;
+    font-weight: 900;
+}
+/*Footer Bar*/
+.bar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-color: #E5E5EB;
+    opacity: 0.65;
+    padding: 15px;
+    color: #1B3035;
+}
+
+.copyright {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    right: 0;
+}
+
+.photocred {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.bottomIcons {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.linked {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.git {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+
+#map {
+	width: 80vw;
+	height: 80vh;
+	margin: 30px auto;
+}
+
+.placeDescriptionsHeader {
+    text-align: center;
+    color: #9AD3C6;
+    padding: 0px 50px;
+}
+
+.breweries {
+    position: relative;
+    /* border: 2px solid #59A996; */
+    border: 2px solid #A5B076;
+	background: rgba(0,0,0, 0.03);
+	padding: 20px;
+	border-radius: 10px;
+    margin: 20px 50px;
+
+}
+
+/* .placeDescriptions {
+    text-align: left;
+    padding: 50px 150px;
+    color: #806B63;
+    color: #523735;
+} */
+
+h4 {
+    margin-top: 0px;
+}

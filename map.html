@@ -1,0 +1,651 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--reference to css style sheets
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="mainStyles.css">
+    <link rel="stylesheet" type="text/css" href="raleway-package/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+    <link rel="icon" href="icons/favicon-map-marker.ico" type="image/x-icon">
+    <title>Map</title>
+  </head>
+  <body>
+        <nav class="links">
+                <ul>
+                    <a class="home" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/main.html">Home</a>
+                    <a class="about" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/about.html">About</a>
+                    <a class="contact" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/contact.html">Contact</a>
+                    <a class="resume" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/resume.html">Resume</a>
+                    <a class="beer" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/beer.html">beer</a>
+                </ul>
+        </nav>
+    <!-- Body content goes here 
+
+
+  </body>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YAIzaSyB0k8rL4FOUNRy3yfZoJ0v_yfLfwLXtSw4&callback=initMap" async defer></script>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- This stylesheet contains specific styles for displaying
+         the map on this page. Replace it with your own styles as
+         described in the documentation:
+         https://developers.google.com/maps/documentation/javascript/tutorial
+    -->
+    <!--<link rel="stylesheet" href="/maps/documentation/javascript/cgc/demos.css">-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--reference to css style sheets-->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="mapStyles.css">
+    <link rel="stylesheet" type="text/css" href="raleway-package/stylesheet.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+
+    <link rel="icon" href="icons/favicon-map-marker.ico" type="image/x-icon">
+    <title>Map</title>
+
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
+
+        #map {
+            /*height: 100%;*/
+            width: 80vw;
+            height: 80vh;
+            margin: 30px auto;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="links">
+        <ul>
+            <a class="home" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/main.html">Home</a>
+            <a class="about" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/about.html">About</a>
+            <a class="contact" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/contact.html">Contact</a>
+            <a class="resume" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/resume.html">Resume</a>
+            <a class="beer" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/beer.html">Beer</a>
+        </ul>
+    </nav>
+
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+
+            // Create a new StyledMapType object, passing it an array of styles,
+            // and the name to be displayed on the map type control.
+            var styledMapType = new google.maps.StyledMapType(
+                [
+                    {
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#ebe3cd"
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#523735"
+                            }
+                        ]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#f5f1e6"
+                            },
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#c9b2a6"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#dcd2be"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#ae9e90"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text",
+                        "stylers": [
+                            {
+                                "color": "#2e5679"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#fffdf5"
+                            },
+                            {
+                                "saturation": -50
+                            },
+                            {
+                                "lightness": -5
+                            },
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape.natural",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dfd2ae"
+                            },
+                            {
+                                "weight": 1
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dfd2ae"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#93817c"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.attraction",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#dfd2ae"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#a5b076"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#447530"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f5f1e6"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#fdfcf8"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#f8c967"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#e9bc62"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway.controlled_access",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#e98d58"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway.controlled_access",
+                        "elementType": "geometry.stroke",
+                        "stylers": [
+                            {
+                                "color": "#db8555"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#806b63"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dfd2ae"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#8f7d77"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.line",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [
+                            {
+                                "color": "#ebe3cd"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit.station",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "color": "#dfd2ae"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry.fill",
+                        "stylers": [
+                            {
+                                "color": "#9ad3c6"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text",
+                        "stylers": [
+                            {
+                                "color": "#92998d"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [
+                            {
+                                "color": "#92998d"
+                            }
+                        ]
+                    }
+                ],
+                { name: 'Styled Map' });
+
+            // Create a map object, and include the MapTypeId to add
+            // to the map type control.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 47.6588, lng: -117.426048 },
+                zoom: 15,
+                mapTypeControlOptions: {
+                    mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+                        'styled_map']
+                }
+            });
+
+            //Associate the styled map with the MapTypeId and set it to display.
+            map.mapTypes.set('styled_map', styledMapType);
+            map.setMapTypeId('styled_map');
+
+            // make a marker
+            // an object with latitude and longitude
+
+            // Serenac Marker
+            let serenacMarker = {
+                lat: 47.658732,
+                lng: -117.411989
+            };
+
+            let marker = new google.maps.Marker({
+                position: serenacMarker,
+                map: map
+            });
+
+            let infoWindow = new google.maps.InfoWindow({
+                content: '<a href="http://www.saranacpublichouse.com/">Serenac Public House</a>'
+            });
+
+            marker.addListener('click', function () {
+                infoWindow.open(map, marker);
+            });
+
+            // Iron Goat Brewing Marker
+            let ironGoatMarker = {
+                lat: 47.654793,
+                lng: -117.431336
+            };
+
+            let marker2 = new google.maps.Marker({
+                position: ironGoatMarker,
+                map: map
+            });
+
+            let infoWindow2 = new google.maps.InfoWindow({
+                content: '<a href="http://www.irongoatbrewing.com/">Iron Goat Brewing</a>'
+            });
+
+            marker2.addListener('click', function () {
+                infoWindow2.open(map, marker2);
+            });
+
+            // Blind Buck Brewing Company
+            let blindBuckMarker = {
+                lat: 47.659275,
+                lng: -117.410832
+            };
+
+            let marker3 = new google.maps.Marker({
+                position: blindBuckMarker,
+                map: map
+            });
+
+            let infoWindow3 = new google.maps.InfoWindow({
+                content: '<a href="http://www.theblindbuck.com/">Blind Buck</a>'
+            });
+
+            marker3.addListener('click', function () {
+                infoWindow3.open(map, marker3);
+            });
+
+            // Orlison Brewing Company
+            let orlisonMarker = {
+                lat: 47.656432,
+                lng: -117.427431
+            };
+
+            let marker4 = new google.maps.Marker({
+                position: orlisonMarker,
+                map: map
+            });
+
+            let infoWindow4 = new google.maps.InfoWindow({
+                content: '<a href="https://www.orlisonbrewing.com/">Orlison Brewing Co.</a>'
+            });
+
+            marker4.addListener('click', function () {
+                infoWindow4.open(map, marker4);
+            });
+
+            // Mountain Lakes Brewing Company
+            let mtnLakesBrewingCoMarker = {
+                lat: 47.657799,
+                lng: -117.413513
+            };
+
+            let marker5 = new google.maps.Marker({
+                position: mtnLakesBrewingCoMarker,
+                map: map
+            });
+
+            let infoWindow5 = new google.maps.InfoWindow({
+                content: '<a href="https://mountainlakesbrewco.com/">Mountain Lakes Brewing Company</a>'
+            });
+
+            marker5.addListener('click', function () {
+                infoWindow5.open(map, marker5);
+            });
+
+            // Liberty Cider Works
+            let libertyCiderWorksMarker = {
+                lat: 47.655297,
+                lng: -117.418460
+            };
+
+            let marker6 = new google.maps.Marker({
+                position: libertyCiderWorksMarker,
+                map: map
+            });
+
+            let infoWindow6 = new google.maps.InfoWindow({
+                content: '<a href="http://libertycider.com/">Liberty Ciderworks</a>'
+            });
+
+            marker6.addListener('click', function () {
+                infoWindow6.open(map, marker6);
+            });
+
+            // Whistle Punk Brewing
+            let WhistlePunkBrewingMarker = {
+                lat: 47.655869,
+                lng: -117.426692
+            };
+
+            let marker7 = new google.maps.Marker({
+                position: WhistlePunkBrewingMarker,
+                map: map
+            });
+
+            let infoWindow7 = new google.maps.InfoWindow({
+                content: '<a href="https://www.whistlepunkbrewing.com/">Whistle Punk Brewing</a>'
+            });
+
+            marker7.addListener('click', function () {
+                infoWindow7.open(map, marker7);
+            });
+
+            // Community Pint
+            let communityPintMarker = {
+                lat: 47.657091,
+                lng: -117.408859
+            };
+
+            let marker8 = new google.maps.Marker({
+                position: communityPintMarker,
+                map: map
+            });
+
+            let infoWindow8 = new google.maps.InfoWindow({
+                content: '<a href="http://www.communitypint.com/">Community Pint</a><a href="https://untappd.com/v/community-pint/6553781">  (Tap List)</a>'
+            });
+
+            marker8.addListener('click', function () {
+                infoWindow8.open(map, marker8);
+            });
+
+            // Borracho
+            let borrachoMarker = {
+                lat: 47.659448,
+                lng: -117.411489
+            };
+
+            let marker9 = new google.maps.Marker({
+                position: borrachoMarker,
+                map: map
+            });
+
+            let infoWindow9 = new google.maps.InfoWindow({
+                content: '<a href="http://www.borrachospokane.com/">Borracho Tacos & Taquiliera</a>'
+            });
+
+            marker9.addListener('click', function () {
+                infoWindow9.open(map, marker9);
+            });
+
+            // Zola
+            let zolaMarker = {
+                lat: 47.659367,
+                lng: -117.412105
+            };
+
+            let marker10 = new google.maps.Marker({
+                position: zolaMarker,
+                map: map
+            });
+
+            let infoWindow10 = new google.maps.InfoWindow({
+                content: '<a href="http://www.zolainspokane.com/">Zola</ha>'
+            });
+
+            marker10.addListener('click', function () {
+                infoWindow10.open(map, marker10);
+            });
+
+        }
+    </script>
+
+    <section class="placeDescriptionsHeader">
+        <h2>Spokane Breweries are where local hipsters mosh to banjo music.</h2>
+    </section>
+
+    <section class="placeDescriptions">
+        <section class="breweries">
+        <h4>Blind Buck</h4>
+        <p>This was the first bar I ever went to. A guy got me a long island iced tea and I almost threw it in his face so my best friend got me a screw driver instead.</p>
+        <p>I have a soft spot for the bar tender's choice of music when its dead on a Tuesday and he can play a nice mix of death metal and early 2000's pop radio hits.</p>
+        </section>
+
+        <section class="breweries">
+        <h4>Borracho Tacos & Taquiliera</h4>
+        <p>Whenever I go to Borrachos I get turnt on good tacos, beer and local music</p>
+        </section>
+
+        <section class="breweries">
+        <h4>Community Pint</h4>
+        <p>On my summer list of new places to try! Their tap list looks all sorts of interesting.</p>
+        </section>
+        
+        <section class="breweries">
+        <h4>Iron Goat Brewing</h4>
+        <p>A common meeting spot for me and a feisty feminist friend of mine where we go to plot the domination of the male race.</p>
+        <p>Like the Hog's Head, but in real life.</p>
+        </section>
+        
+        <section class="breweries">
+        <h4>Liberty Ciderworks</h4>
+        <p>A place to go if you want to get your proverbial Apple-A-Day, in a more fun form than just eating apples.</p>
+        </section>
+
+        <section class="breweries">
+        <h4>Mountain Lakes Brewing Co.</h4>
+        <p>Always a good variance of beers on tap, and a good sign if several of them are sold out at a time.</p>
+        </section>
+
+        <section class="breweries">
+        <h4>Orlison Brewing Co</h4>
+        <p>If I said I had a favorite from Orlison I'd be lying. They could release actual battery acid and I'd think it was an odd choice, but commend their use of creativity.</p>
+        </section>
+
+        <section class="breweries">
+        <h4>Serenac Public House</h4>
+        <p>Where I go when I want to mosh to banjo music.</p>
+        </section>
+
+        <section class="breweries">
+        <h4>Whistle Punk Brewing</h4>
+        <p>Perfect variance of beers on tap, allows outside food, and a great location to bar hop to or from.</p>
+        </section>
+
+        <section class="breweries">
+        <h4>Zola</h4> 
+        <p>I hated moscow mules and then I went to Zola and was proven wrong.</p>
+        </section> 
+</section>
+
+
+</body>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuF9-WJQD57J2KM1LdiSXVPuWdko_ma34&callback=initMap" async
+    defer></script>
+
+</html>
