@@ -1,5 +1,5 @@
 /*Carol Joplin
-  Simple Webpage
+  contactStyles.css
 */
 
 html {
@@ -86,10 +86,33 @@ input, select, textarea {
     color: #3C3232;
 }
 
+/* input:valid {
+    border: 2px #6F858A solid;
+
+}
+input:invalid {
+    border: 2px #DB8555 solid;
+}
+
+select:valid {
+    border: 2px #6F858A solid;
+}
+select:invalid {
+    border: 2px #DB8555 solid;
+}
+
+textarea:invalid {
+    border: 2px #DB8555 solid;
+}
+textarea:valid {
+    border: 2px #6F858A solid;
+} */
+
 input:focus, select:focus, textarea:focus {
     outline: none;
-    border: 2px #89A0A0 solid;
-    color: #6F858A;
+    border: 2px  solid;
+    /*color: #DB8555;*/
+    color: darkgray;
 }
 
 textarea {
@@ -101,7 +124,7 @@ select {
     background-color: #E9E8EF;
 }
 
-.submitButton {
+button {
     text-align: left;
 }
 
@@ -117,7 +140,15 @@ input[type="submit"]:hover {
     color: #E9E8EF;
     background: #6F858A;
 }
-
+.formContainer {
+    position: relative;
+    text-align: left;
+    border: 2px solid #6F858A;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 50px;
+}
 .bar {
     position: relative;
     display: flex;
@@ -195,9 +226,9 @@ input[type="submit"]:hover {
     .flex-container {
         position: relative;
         flex-wrap: wrap;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
         margin: auto;
     }
 
@@ -246,9 +277,9 @@ input[type="submit"]:hover {
     .flex-container {
         position: relative;
         flex-wrap: wrap;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+        text-align: left;
+        align-items: left;
+        justify-content: left;
         margin: auto;
     }
 
