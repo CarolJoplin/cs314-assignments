@@ -3,65 +3,71 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <!--reference to css style sheets-->
-    <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="contactStyles.css">
-    <link rel="stylesheet" type="text/css" href="raleway-package/stylesheet.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 
-    <link rel="icon" href="icons/favicon-envelope.ico" type="image/x-icon">
-    <title>Contact</title>
-  </head>
-  <body>
-    <div class="full-page-background">
-      <nav class="links">
-          <ul>
-            <a class="home" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/main.html">Home</a>
-            <a class="about" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/about.html">About</a>
-            <a class="contact" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/contact.html">Contact</a>
-            <a class="resume" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/resume.html">Resume</a>
-            <a class="beer" href="file:///Users/carol/Documents/School/Spring2018/WebDev/Homework/final/beer.html">Beer</a>
-          </ul>
-          <section class="header">
-              <h3>Drop me a line</h3>
-          </section>
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!--reference to css style sheets-->
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="contactStyles.css">
+  <link rel="stylesheet" type="text/css" href="raleway-package/stylesheet.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
 
-      <div class="elements">
-        <div class="flex-container">
-          <form class="nameLabel">
-            <label for="first">Name</label>
-            <input name="textbox" id="#firstName">
-          </form>
+  <link rel="icon" href="icons/favicon-envelope.ico" type="image/x-icon">
+  <title>Contact</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
 
-          <form class="emailForm">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="emailBox">
-          </form>
+<body>
+  <div class="full-page-background">
+    <nav class="links">
+      <ul>
+        <a class="home" href="main.html">Home</a>
+        <a class="about" href="about.html">About</a>
+        <a class="contact" href="contact.html">Contact</a>
+        <a class="resume" href="resume.html">Resume</a>
+        <a class="beer" href="beer.html">Beer</a>
+      </ul>
+      <section class="header">
+        <h3>Drop me a line</h3>
+      </section>
+    </nav>
 
-          <form class="textArea">
-            <label for="radio">About You</label>
-            <textarea rows="4" cols="50" id="#txtArea" ></textarea>
-          </form>
+    <div class="elements">
+      <div class="flex-container">
+        <form class="nameLabel">
+          <label for="first">Name</label>
+          <input name="textbox" id="firstName" required minlength="1">
 
-          <form class="submitButton">
-            <input type="submit" value="Submit">
-          </form>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="emailBox" size="64" maxlength="256" required>
 
+          <label for="radio">About You</label>
+          <textarea rows="4" cols="50" required id="txtArea"></textarea>
+
+          <input id="submitButton" type="submit" value="Submit">
+        </form>
+
+      </div>
+    </div>
+
+    <section class="formContainer"></section>
+
+    <section class="bar">
+      <p class="photocred">Photo Credit Lauren Pattison</p>
+      <div class="bottomIcons">
+        <div class="linked">
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="git">
+          <i class="fab fa-github-square"></i>
         </div>
       </div>
+      <p class="copyright">© Carol Joplin 2018</p>
+    </section>
+  </div>
+  <!-- <script src="contact.js"></script> -->
+  <script src="contact.js"></script>
+</body>
 
-      <section class="bar">
-        <p class="photocred">Photo Credit Lauren Pattison</p>
-        <div class="bottomIcons">
-          <div class="linked"><i class="fab fa-linkedin"></i></div>
-          <div class="git"><i class="fab fa-github-square"></i></div>
-        </div>
-        <p class="copyright">© Carol Joplin 2018</p>
-      </section>
-    </div>
-  </body>
 </html>
