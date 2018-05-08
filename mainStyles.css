@@ -72,7 +72,20 @@ a {
     background: transparent;
     color: #1B3035;
     font-weight: 900;
+    transition: all 0.4s ease-in;
 }
+
+h1, h4 {
+    margin-left: 12px;
+
+}
+
+.flex-head:hover {
+    box-shadow: -12px -12px 12px 20px rgba(0, 0, 0, 0.209);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 /*Footer Bar*/
 .bar {
     position: relative;
