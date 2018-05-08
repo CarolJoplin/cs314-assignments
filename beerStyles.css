@@ -1,8 +1,8 @@
 /*
     NAME: CAROL JOPLIN
-    DATE: APRIL 23, 2018
-    ASGN: JS-JQUERY
-    FILE: STYLES.CSS
+    DATE: MAY 7, 2018
+    ASGN: JFINAL
+    FILE: BEERSTYLES.CSS
 */
 
 html {
@@ -36,6 +36,11 @@ a {
   margin: 10px;
 } 
 
+.beerHTML {
+  position: relative;
+  margin: 10px;
+} 
+
 .links {
   position: relative;
   text-align: right;
@@ -50,16 +55,16 @@ a {
 
 /* HEADER BAR */
 .headersection {
-  /* position: relative;
-  padding: 0px 0px 50px 0;
-  background-color: #A75502;
-  color: whitesmoke; */
-
   position: relative;
+  padding: 0px 0px 50px 0;
+  background-color: #DB8555;
+  color: whitesmoke;
+
+  /* position: relative;
   padding: 50px 0;
   /* background-color: #A75502; */
   background-color: #DB8555;
-  color: whitesmoke;
+  color: whitesmoke; */
 }
 
 /* SITE CONTENT */
@@ -74,6 +79,10 @@ a {
   margin: 20px 50px;
 }
 
+.beer-description {
+  padding: 0px 10px 0px 0px;
+}
+
 button {
   padding: 5px 20px;
   margin: 10px 0px;
@@ -82,4 +91,51 @@ button {
 
 .h4 {
   margin-bottom: 10px;
+}
+
+/*Footer Bar*/
+.bar {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* background-color: #E5E5EB; */
+  opacity: 0.65;
+  padding: 15px;
+  /* color: #1B3035; */
+  color: #DB8555;
+}
+
+.copyright {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  right: 0;
+}
+
+.photocred {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.bottomIcons {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+  text-align: center;
+}
+
+.linked {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.git {
+  position: relative;
+  display: inline-block;
+  text-align: center;
 }
