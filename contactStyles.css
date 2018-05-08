@@ -1,5 +1,4 @@
 /*Carol Joplin
-  Simple Webpage
 */
 
 html {
@@ -19,29 +18,40 @@ h1 {
 	background-size: cover;
 }
 
+/* LINKS BAR */
 a {
     text-decoration: none;
     /* color: #775A4A; */
     color: #1B3035;
-}
-
-.home {
+  }
+  
+  .home {
     position: relative;
     margin: 10px;
-}
-.about {
+  }
+  .about {
     position: relative;
     margin: 10px;
-}
-.contact {
+  }
+  .contact {
     position: relative;
     margin: 10px;
-}
-
-.resume {
+  }
+  
+  .resume {
     position: relative;
     margin: 10px;
-}
+  } 
+  
+  .beerHTML {
+    position: relative;
+    margin: 10px;
+  } 
+  
+  .mapHTML {
+    position: relative;
+    margin-left: 10px;
+  } 
 
 .links {
     position: relative;
