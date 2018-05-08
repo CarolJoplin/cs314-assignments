@@ -11,29 +11,48 @@ html {
     background-size: cover; 
 }
 
+.backgroundImage {
+    position: fixed;
+	height: 100%;
+	width: 100%;
+	background-image: url("forest.jpeg");
+	background-size: cover;
+}
+
+/* LINKS BAR */
 a {
     text-decoration: none;
     /* color: #775A4A; */
     color: #1B3035;
-}
-
-.home {
+  }
+  
+  .home {
     position: relative;
     margin: 10px;
-}
-.about {
+  }
+  .about {
     position: relative;
     margin: 10px;
-}
-.contact {
+  }
+  .contact {
     position: relative;
     margin: 10px;
-}
-
-.resume {
+  }
+  
+  .resume {
     position: relative;
     margin: 10px;
-}
+  } 
+  
+  .beerHTML {
+    position: relative;
+    margin: 10px;
+  } 
+  
+  .mapHTML {
+    position: relative;
+    margin-left: 10px;
+  } 
 
 .links {
     position: relative;
@@ -141,4 +160,52 @@ a {
 
 h4 {
     margin-top: 0px;
+}
+
+/*Footer Bar*/
+.bar {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* background-color: #E5E5EB; */
+    background-color: white;
+    opacity: 0.65;
+    padding: 15px;
+    /* color: #1B3035; */
+    color: #9AD3C6;
+}
+
+.copyright {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    right: 0;
+}
+
+.photocred {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.bottomIcons {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.linked {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.git {
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
