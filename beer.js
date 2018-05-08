@@ -2,7 +2,6 @@
    ASGN: FINAL
    FILE: BEER.JS
 */
-"use strict"
 
 $.ajax({}).done().fail().always();
 
@@ -11,20 +10,20 @@ $.ajax({
 	dataType: "json",
 })
 
-	.done(function (response) {
-		console.log(response);
-		displayBeerData(response);
-	})
+.done(function (response) {
+	console.log(response);
+	displayBeerData(response);
+})
 
 
-	.fail(function (status, errorThrown) {
-		console.log("Error: ", errorThrown);
-		console.log("Status: ", status);
-	})
+.fail(function (status, errorThrown) {
+	console.log("Error: ", errorThrown);
+	console.log("Status: ", status);	
+})
 
-	.always(function () {
-		console.log("Request is complete!");
-	})
+.always(function () {
+	console.log("Request is complete!");
+})
 
 function displayBeerData(data) {
 
@@ -60,22 +59,25 @@ function displayBeerData(data) {
 
 		/* details button event listener */
 		$(`#food-pairing-button-${beer.id}`).click((event) => {
-			console.log(`#food-pairing-button-${beer.id} clicked`);
-			foodButtonClick(event, beer.id);
+			//console.log(`#food-pairing-button-${beer.id} clicked`);
+			foodButtonClick(event, beer.id, beer.food_pairing);
 		});
 
 	}
 }
 
-function foodButtonClick(event, beerId) {
-	$.ajax({
-		url: 'https://api.punkapi.com/v2/beers/',
+function foodButtonClick(event, beerId, foodPairing) {
+	if(event.target.dataset.loaded)
+		$(`#outer-beers-container-${beerId}`).toggle();
+	else
+		$.ajax({
+		url: `https://api.punkapi.com/v2/beers/${beerId}`,
 		dataType: "json",
-	})
+		})
 
 		.done(function (response) {
 			$(event.target).attr('data-loaded', 'true');
-			console.log(response);
+			//console.log(response);
 			displayFood(response);
 		})
 
@@ -90,28 +92,32 @@ function foodButtonClick(event, beerId) {
 
 }
 
+// DISPLAYS ALL FOOD PAIRINGS FOR ALL BEERS
 function displayFood(beers) {
 	let outerBeersContainer = document.createElement('div');
 	outerBeersContainer.classList = 'outerBeersContainer';
-	outerBeersContainer.id = `outer-beers-container-${beers[0].food_pairing_}`;
-	$(`#${beers[0].food_pairing_}`).append(outerBeersContainer);
+	outerBeersContainer.id = `outer-beers-container-${beers[0].id}`;
+	$(`#${beers[0].id}`).append(outerBeersContainer);
 
 	outerBeersContainer.style.border = '2px';
 
+
+	//functional code to get whole comma-separated list of food pairings
 	for (let beer of beers) {
 
-		let beersContainer = document.createElement('div');
-		beersContainer.id = `food-container-${beer.id}`;
-		beersContainer.className = 'beers-container';
+		let foodContainer = document.createElement('div');
+		foodContainer.id = `food-container-${beer.id}`;
+		foodContainer.className = 'food-container';
 
+		
 		let foodName = document.createElement('h5');
 		foodName.className = 'food-container';
-		foodName.innerHTML = beer.food;
-		//$(`${beer.food_pairing}`).append(outerBeersContainer);
+		foodName.innerHTML = beer.food_pairing;
 
-		$(outerBeersContainer).append(beersContainer);
+		$(outerBeersContainer).append(foodContainer);
 		$(`#food-container-${beer.id}`).append(foodName);
-		$(`${beer.food_pairing_}`).append(outerBeersContainer);
+		$(`${beer.food_pairing}`).append(outerBeersContainer);
 
 	}
+
 }
