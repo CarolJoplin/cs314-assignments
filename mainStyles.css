@@ -16,7 +16,14 @@ a {
     text-decoration: none;
     /* color: #775A4A; */
     color: #1B3035;
+    transition: all 0.4s ease-in-out;
   }
+  a:hover {
+    /*box-shadow: -12px -12px 12px 20px rgba(0, 0, 0, 0.209);
+    border-radius: 10px;
+    cursor: pointer;*/
+    color: #DB8555;
+}
   
   .home {
     position: relative;
@@ -72,19 +79,28 @@ a {
     background: transparent;
     color: #1B3035;
     font-weight: 900;
-    transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in-out;
 }
 
 h1, h4 {
     margin-left: 12px;
-
+    transition: all 0.4s ease-in-out;
 }
 
-.flex-head:hover {
-    box-shadow: -12px -12px 12px 20px rgba(0, 0, 0, 0.209);
+h1:hover {
+    color: #DB8555;
+}
+
+h4:hover {
+    color: #DB8555;
+}
+
+/* .flex-head:hover {
+    /*box-shadow: -12px -12px 12px 20px rgba(0, 0, 0, 0.209);
     border-radius: 10px;
     cursor: pointer;
-}
+    color: #DB8555;
+} */
 
 /*Footer Bar*/
 .bar {
