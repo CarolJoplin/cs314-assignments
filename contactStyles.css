@@ -1,21 +1,14 @@
-/*Carol Joplin
-*/
-
 html {
     font-family: "ralewayregular", Arial, sans-serif;
     font-size: 1em;
 }
 
-h1 {
-    margin: 0 auto;
-}
-
-.full-page-background {
-	position: fixed;
+.intro-page-background {
+	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-image: url("forest.jpeg");
-	background-size: cover;
+	background-image: url("hat1.jpeg");
+    background-size: cover; 
 }
 
 /* LINKS BAR */
@@ -23,7 +16,14 @@ a {
     text-decoration: none;
     /* color: #775A4A; */
     color: #1B3035;
+    transition: all 0.4s ease-in-out;
   }
+  a:hover {
+    /*box-shadow: -12px -12px 12px 20px rgba(0, 0, 0, 0.209);
+    border-radius: 10px;
+    cursor: pointer;*/
+    color: #DB8555;
+}
   
   .home {
     position: relative;
@@ -65,126 +65,53 @@ a {
     font-weight: 900;
 }
 
-.header {
+.front-page {
+    height: 100%; /* Do not adjust - this is perfect with the picture */
+}
+
+.flex-head {
+    position: relative;
     display: flex;
-    position: relative;
+    margin: 0% 5%; /* Do not adjust - this is perfect with the picture */
     text-align: left;
-    margin: 5% auto;
+    justify-content: Left;
+    flex-direction: column;
+    background: transparent;
     color: #1B3035;
+    font-weight: 900;
+    transition: all 0.4s ease-in-out;
 }
 
-.elements {
-    position: relative;
-    background-color: #C4C8C8;
-    padding: 15px;
-    height: auto;
+h1, h4 {
+    margin-left: 12px;
+    transition: all 0.4s ease-in-out;
 }
 
-label {
-    text-align: left;
-    display: block;
-    padding: 1em 0 5px;
-    color: #3C3232;
+h1:hover {
+    color: #DB8555;
 }
 
-input, select, textarea {
-    font-family: "ralewayregular", Arial, sans-serif;
-    width: 100%;
-    box-sizing: border-box;
-    border: 2px #6F858A solid;
-    padding: 0.5em;
-    color: #3C3232;
+h4:hover {
+    color: #DB8555;
 }
 
-/* input:valid {
-    border: 2px #6F858A solid;
-
-}
-input:invalid {
-    border: 2px #DB8555 solid;
-}
-
-select:valid {
-    border: 2px #6F858A solid;
-}
-select:invalid {
-    border: 2px #DB8555 solid;
-}
-
-textarea:invalid {
-    border: 2px #DB8555 solid;
-}
-textarea:valid {
-    border: 2px #6F858A solid;
+/* .flex-head:hover {
+    /*box-shadow: -12px -12px 12px 20px rgba(0, 0, 0, 0.209);
+    border-radius: 10px;
+    cursor: pointer;
+    color: #DB8555;
 } */
 
-input:focus, select:focus, textarea:focus {
-    outline: none;
-    border: 2px  solid;
-    /*color: #DB8555;*/
-    color: darkgray;
-}
-
-textarea {
-    height: 100px;
-    resize: none;  
-}
-
-select {
-    background-color: #E9E8EF;
-}
-
-button {
-    text-align: left;
-}
-
-input[type="submit"] {
-    width: auto;
-    padding: 10px 20px;
-    margin-top: 2em;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    background-color: #E9E8EF;
-} 
-
-input[type="submit"]:hover {
-    color: #E9E8EF;
-    background: #6F858A;
-}
-.formContainer {
-    position: relative;
-    display: none;
-    text-align: left;
-    border: 2px solid #6F858A;
-    background-color: whitesmoke;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 50px;
-}
-
-.outerFormContainer {
-    color: #6F858A;
-}
-
-.nameFormContainer {
-    padding: 0 10px 0 0;
-}
-
-.emailFormContainer {
-    padding: 0 10px 0 0;
-}
-
-.aboutFormContainer {
-    padding: 0 10px 0 0;
-}
-
+/*Footer Bar*/
 .bar {
     position: relative;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    background-color: #E5E5EB;
+    opacity: 0.65;
     padding: 15px;
-    color: #D3D8DD;
+    color: #1B3035;
 }
 
 .copyright {
@@ -219,120 +146,4 @@ input[type="submit"]:hover {
     position: relative;
     display: inline-block;
     text-align: center;
-}
-
-@media only screen and (max-width: 1024px){
-
-    input[type="submit"] {
-        width: auto;
-        padding: 10px 20px;
-        margin-top: 2em;
-        cursor: pointer;
-        transition: all 0.4s ease;
-        background-color: #E9E8EF;
-        /* background-color: white; */
-    } 
-    
-    input[type="submit"] {
-        width: auto;
-        padding: 10px 20px;
-        margin-top: 2em;
-        cursor: pointer;
-        transition: all 0.4s ease;
-    } 
-
-    /* input:focus, select:focus, textarea:focus {
-        outline: none;
-        border: 2px  solid;
-        /*color: #DB8555;
-        color: darkgray;
-    }
-     */
-    input[type="submit"]:hover {
-        color: #E9E8EF;
-        background: #6F858A;
-    }
-
-    .elements {
-        position: relative;
-        background-color: #C4C8C8;
-        padding: 15px;
-        height: auto;
-    }
-
-    .flex-container {
-        position: relative;
-        flex-wrap: wrap;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
-        margin: auto;
-    }
-
-    .bar {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 15px;
-        color: white;
-    }
-}
-
-
-@media only screen and (max-width: 768px){
-
-    input[type="submit"] {
-        width: auto;
-        padding: 10px 20px;
-        margin-top: 2em;
-        cursor: pointer;
-        transition: all 0.4s ease;
-        background-color: #E9E8EF;
-    } 
-    
-    input[type="submit"] {
-        width: auto;
-        padding: 10px 20px;
-        margin-top: 2em;
-        cursor: pointer;
-        transition: all 0.4s ease;
-    } 
-    
-    input[type="submit"]:hover {
-        color: whitesmoke;
-        background: #6F858A;
-    }
-
-    input:focus, select:focus, textarea:focus {
-        outline: none;
-        border: 2px  solid;
-        /*color: #DB8555;*/
-        color: darkgray;
-    }
-
-    .elements {
-        position: relative;
-        background-color: #C4C8C8;
-        padding: 15px;
-        height: auto;
-    }
-
-    .flex-container {
-        position: relative;
-        flex-wrap: wrap;
-        text-align: left;
-        align-items: left;
-        justify-content: left;
-        margin: auto;
-    }
-
-    .bar {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-between;
-        padding: 15px;
-        color: #D3D8DD;
-    }
 }
